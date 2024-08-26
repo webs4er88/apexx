@@ -1,0 +1,1253 @@
+{% extends "homepage.html" %}
+{% load static %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en_GB">
+
+
+<!-- Mirrored from Apexxcourier.com/terms/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 15:23:50 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <style>
+    /* hide all img elements until the svg is injected to prevent "unstyled image flash" */
+    img.injectable {
+      visibility: hidden;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/assets/themes/theme/dist/webpack/styles9726.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&amp;display=swap" rel="stylesheet" />
+  <title>Terms and Conditions - Apexxcourier</title>
+
+  <style id="global-styles-inline-css" type="text/css">
+    body {
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%);
+      --wp--preset--duotone--dark-grayscale: url("#wp-duotone-dark-grayscale");
+      --wp--preset--duotone--grayscale: url("#wp-duotone-grayscale");
+      --wp--preset--duotone--purple-yellow: url("#wp-duotone-purple-yellow");
+      --wp--preset--duotone--blue-red: url("#wp-duotone-blue-red");
+      --wp--preset--duotone--midnight: url("#wp-duotone-midnight");
+      --wp--preset--duotone--magenta-yellow: url("#wp-duotone-magenta-yellow");
+      --wp--preset--duotone--purple-green: url("#wp-duotone-purple-green");
+      --wp--preset--duotone--blue-orange: url("#wp-duotone-blue-orange");
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+  </style>
+  <link rel="stylesheet" id="divi-builder-style-css"
+    href="/assets/plugins/divi-builder/css/style-static.min838c.css" type="text/css" media="all" />
+  <script type="text/javascript" src="/wp-includes/js/jquery/jquery.minaf6c.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.mind617.js"
+    id="jquery-migrate-js"></script>
+  <style type="text/css" id="wp-custom-css">
+    a.post_cta {
+      display: table !important;
+      font-weight: normal !important;
+      text-align: center !important;
+      text-decoration: none !important;
+      -moz-transition: all 0.4s ease !important;
+      -webkit-transition: all 0.4s ease !important;
+      -o-transition: all 0.4s ease !important;
+      background: #462f9b !important;
+      border-radius: 6px !important;
+      border-width: 0px !important;
+      color: rgb(255, 255, 255) !important;
+      font-family: sans-serif !important;
+      height: auto !important;
+      transition: all 0.4s ease !important;
+      padding: 10px 25px !important;
+      text-shadow: none !important;
+      width: auto !important;
+      line-height: 1.5em !important;
+      margin: auto;
+    }
+  </style>
+
+
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="/assets/themes/theme/dist/images/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="/assets/themes/theme/dist/images/favicons/favicon-16x16.png" />
+
+</head>
+
+
+<body
+  class="page--legal privacy-policy page-template page-template-legal page page-id-3 et_divi_builder et-pb-theme-themosis et-db title--privacy-policy   ">
+
+
+  <!-- DESKTOP VIEW NAVIGATION BAR -->
+  <header class="header">
+    <div class="o-wrapper o-wrapper--large w100 h100">
+      <div class="flex justify-between items-center w100 h100">
+        <a href="/index-2.html" class="header__logo mr-4">
+          <img src="/assets/themes/theme/dist/images/zencargo-logo--white.svg" alt="Apexxcourier Logo" />
+        </a>
+  
+        <nav>
+          <a class="nav--solutions post-type--nav_menu_item has-sub" data-subnav-open="solutions"
+            href="/platform/index.html">Solutions</a>
+          <div class="submenu submenu--solutions" data-subnav-target="solutions">
+            <div class="o-wrapper o-wrapper--large">
+              <div class="o-layout">
+                <div class="o-layout__item u-3/16@tablet hidden lg:inline-block">
+                  <a href="/platform/index.html" class="inline-block">
+                    <h3 class="text-white font-medium">Solutions</h3>
+                  </a>
+                </div>
+  
+                <div class="o-layout__item u-13/16@desktop">
+                  <div class="o-layout">
+                    <div class="o-layout__item u-1/3@desktop colu-0">
+                      <div class="ssni__title ssni__title--0 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Supply Chain as a Service
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-6 flex nav--platform post-type--page" href="/platform/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Platform.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+  
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Platform
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Drive action with smart insights
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--supply-chain-optimisation post-type--page"
+                          href="/supply-chain-optimisation/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Supply-Chain-Optimisation.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+  
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Supply Chain Optimisation
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Tailored Solutions For Your Supply Chain
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--freight-forwarding post-type--page"
+                          href="/freight-forwarding/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Freight-Forwarding.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+  
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Freight Forwarding
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Global Logistics Management
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@desktop colu-1">
+                      <div class="ssni__title ssni__title--1 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Supply Chain Optimisation
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-6 flex nav--grow-revenue post-type--page"
+                          href="/supply-chain-optimisation/grow-revenue/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Grow Revenue
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Reduce stock outs and improve customer service
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--reduce-freight-costs post-type--page"
+                          href="/supply-chain-optimisation/reduce-freight-costs/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Reduce Freight Costs
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Manage landed costs and grow your margins
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--release-working-capital post-type--page"
+                          href="/supply-chain-optimisation/release-working-capital/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Release Working Capital
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Deploy capital effectively and reduce
+                              unnecessary inventory
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@desktop colu-2">
+                      <div class="ssni__title ssni__title--2 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Industries
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-4 flex nav--plastics-packaging post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Plastics &#038; Packaging
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--fashion-apparel-sports post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Fashion, Apparel &#038; Sports
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--fmcg post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              FMCG
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--luxury-beauty post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Luxury &#038; Beauty
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--homeware post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Home & Furniture
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--health post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Health &#038; Supplements
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--building-materials-home-improvement post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Building Materials & Home Improvement
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav--resources post-type--page has-sub" href="/tracking/index.html">Tracking</a>
+          <a class="nav--company post-type--nav_menu_item has-sub" data-subnav-open="company" href="#">Company</a>
+          <div class="submenu submenu--company" data-subnav-target="company">
+            <div class="o-wrapper o-wrapper--large">
+              <div class="o-layout">
+                <div class="o-layout__item u-4/16@desktop hidden lg:inline-block">
+                  <h3 class="text-white font-medium">Company</h3>
+                </div>
+  
+                <div class="o-layout__item u-8/16@desktop u-1/1">
+                  <div class="o-layout">
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--about post-type--page"
+                        href="/about/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            About
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read the story and meet the team building a world
+                            with smarter trade.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--careers post-type--page"
+                        href="/careers/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Careers
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Help us solve one of the world’s oldest problems.
+                            We’re growing fast.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--contact-zencargo post-type--page"
+                        href="/contact-Apexxcourier/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Contact Apexxcourier
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Want to get in touch? Find out how to drop us a
+                            line.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex" href="#">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Press
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read our latest press announcements and
+                            achievements about the business
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 sm:my-8 lg:mt-0 lg:mb-8 flex" href="#">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Apexxcourier Team
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read insights from our Apexxcourier team, a dedicated
+                            group of experts in the supply chain industry
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="o-layout__item u-4/16 hidden lg:inline-block">
+                  <img class="company-subnav-image" src="/assets/themes/theme/dist/images/company-subnav.svg"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <a class="nav--careers post-type--page" href="/careers/index.html">Careers</a>
+        </nav>
+  
+        <div class="header__actions">
+  
+          <a href="/tracking/index.html" class="login c--inherit ml-2 c-btn c-btn--faded">Track Shipment</a>
+        </div>
+  
+        <button class="tg-hamburger" type="button">
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- MOBILE NAVIGAION BAR -->
+  <div class="mobile-nav bg-darkNavy fixed inset-0 overflow-hidden overflow-y-auto">
+    <div class="min-h-full flex flex-col justify-between">
+      <div class="nav-container o-wrapper w100 pb-6 flex flex-col flex-auto">
+        <nav>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/about/index.html">Why Apexxcourier</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/tracking/index.html">Tracking</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/about/index.html">About</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/contact-Apexxcourier/index.html">Contact Apexxcourier
+          </a>
+  
+          <a class="nav--careers post-type--page" href="{% url "carrer" %}">Careers</a>
+        </nav>
+  
+        <a href="#"
+          class="mob-caly rounded bg--tertiary p-4 flex items-center justify-between mt-8 text-navy hover:text-white">
+          <img src="assets/themes/theme/dist/images/icons/calc--alt.html" alt="Calc Alt" class="mr-4 calc-icon"
+            style="max-width: 35px" />
+          <h6 class="flex-auto">Calculate your ROI savings with Apexxcourier</h6>
+          <img src="assets/themes/theme/dist/images/right-chev.html" alt="Chev right" class="ml-4" />
+        </a>
+  
+        <div class="header__actions mt-6 mb-24">
+          <div>
+            <a href="{% url "tracking" %}"
+              class="c-btn mb-3 c-btn--outline justify-center c-btn--outline--accent w100">Track Shipment</a>
+          </div>
+          <div>
+            <a href="{% url "getstarted" %}" class="c-btn c-btn--accent w100 justify-center">Get started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {% block content %}
+<main class="content remodal-bg">
+
+  <div class="header-height"></div>
+
+  <section class="md:mb-32 hero hero--full-width md:flex flex-col img--cover overflow-hidden  bg--tertiary   ">
+
+
+    <div class="hero__wrapper relative flex-auto flex flex-col items-start justify-end">
+
+      <div class="absolute inset-0 img--cover">
+      </div>
+
+      <div class="o-wrapper relative w100  c--white ">
+        <div class=" max-w-md md:max-w-2xl hero__text">
+          <h6 class="mb-4 md:mb-4">Legal</h6>
+          <h1>Terms and Conditions</h1>
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="my-16 md:my-32">
+    <div class="o-wrapper">
+
+      <div class="legal-content o-layout">
+        <div class="o-layout__item u-4/12@tablet hidden md:inline-block">
+          <div class="legal-content__nav__cont">
+            <ul class="unset-list sticky top-0">
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#introduction" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Introduction</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#definitions" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Definitions</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#services" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Services</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#customer-responsibilities"
+                  class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Customer Responsibilities</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#personal-information-and-registration"
+                  class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Personal Information and Registration</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#basis-of-sale" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Basis of Sale</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#fees-and-payment" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Fees and Payment</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#duration" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Duration</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#successors-and-our-sub-contractors"
+                  class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Successors and our sub-contractors</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#excluding-liability" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Excluding liability</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#governing-law-jurisdiction-and-complaints"
+                  class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Governing law, jurisdiction and complaints</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+              <li class="u-h4 pb-3 mb-3 font-bold">
+                <a href="#attribution" class="flex justify-between items-center c--primary link-transition">
+                  <div class="mr-6">Attribution</div>
+                  <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8" stroke="#2DB5E6"
+                      fill="none" stroke-linecap="square" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="legal-content__main o-layout__item  u-8/12@tablet post-content">
+          <article id="introduction" class="mb-16">
+            <h3 class="mb-5">Introduction</h2>
+              <div class="post-content">
+                <p>All business is transacted in accordance with the current standard trading conditions of the
+                   International Freight Association, <a
+                    href="#">copy available
+                    here.</a></p>
+                <ol>
+                  <li>By using the website, you agree for yourself and for your company to fully comply with and be
+                    bound by these Terms &amp; Conditions each time you use the website. Thus, please review the
+                    following Terms &amp; Conditions carefully, before you start using the website, and if you cannot
+                    agree to these Terms &amp; Conditions, please leave the website and do not use the Services
+                    (defined below).</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="definitions" class="mb-16">
+            <h3 class="mb-5">Definitions</h2>
+              <div class="post-content">
+                <ol start="3">
+                  <li>The terms “us ” or “we” or “our” or “Supplier” or “Apexxcourier” refers to Worldwide Freight
+                    Logistics Limited, the owner of the website.</li>
+                  <li>The terms “you” or “yourself” or “user” refers to a person or company browsing the website or a
+                    person or company who has registered with the website to use the Service.</li>
+                  <li>The term “Service” means the services advertised on the Website.</li>
+                  <li>Order means the Customer’s order for the Services from the Supplier as submitted following the
+                    step by step process set out on the Website;</li>
+                  <li>Contract means the legally-binding agreement between you and us for the supply of the Services;
+                  </li>
+                  <li>Website means our website <a href="{% url "homepage" %}">www.Apexxcourier.com</a> on which the Services are
+                    advertised.</li>
+                  <li>Privacy Policy means the terms which set out how we will deal with confidential and personal
+                    information received from you via the Website;</li>
+                  <li>All text, information, graphics, audio, video, and data offered through the website, whether
+                    free to all or part of the paid Service, are collectively known as “Content”.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="services" class="mb-16">
+            <h3 class="mb-5">Services</h2>
+              <div class="post-content">
+                <ol start="11">
+                  <li>The quotes and prices on this site are only guides and Apexxcourier may not offer these to you.
+                    Apexxcourier reserves the right to decline any booking at its sole discretion.</li>
+                  <li>All Services which appear on the Website are subject to availability.</li>
+                  <li>We can make changes to the Services which are necessary to comply with any applicable law or
+                    safety requirement. We will notify you of these changes.</li>
+                  <li>All business is transacted in accordance with the current standard trading conditions of the
+                     International Freight Association  with the following additional clause:</li>
+                  <li>The Company has currently removed any requirement that consignments are delivered against signed
+                    receipts. The Customer agrees that the Consignee will take reasonable steps to ensure that its
+                    staff or the staff of any third party receiving the Goods on the Consignee&#8217;s behalf will
+                    provide their name and job title to the Company&#8217;s representative on delivery for the
+                    purposes of confirming delivery of the Goods. The Customer further agrees that in all cases
+                    photographic evidence of the Goods at their intended destination shall be good evidence of
+                    delivery and the condition of the Goods on delivery.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="customer-responsibilities" class="mb-16">
+            <h3 class="mb-5">Customer Responsibilities</h2>
+              <div class="post-content">
+                <ol start="15">
+                  <li>You must co-operate with us in all matters relating to the Services, provide us and our
+                    authorised employees and representatives with access to any premises under your control as
+                    required, provide us with all information required to perform the Services and obtain any
+                    necessary licences and consents (unless otherwise agreed).</li>
+                  <li>Failure to comply with the above is a Customer default which entitles us to suspend performance
+                    of the Services until you remedy it or if you fail to remedy it following our request, we can
+                    terminate the Contract with immediate effect on written notice to you.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="personal-information-and-registration" class="mb-16">
+            <h3 class="mb-5">Personal Information and Registration</h2>
+              <div class="post-content">
+                <ol start="17">
+                  <li>When registering to use the Website you must set up a username and password. You remain
+                    responsible for all actions taken under the chosen username and password and undertake not to
+                    disclose your username and password to anyone else and keep them secret.</li>
+                  <li>We retain and use all information strictly under the Privacy Policy.</li>
+                  <li>We may contact you by using e-mail or other electronic communication methods and by pre-paid
+                    post and you expressly agree to this.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="basis-of-sale" class="mb-16">
+            <h3 class="mb-5">Basis of Sale</h2>
+              <div class="post-content">
+                <ol start="20">
+                  <li>The description of the Services and any Goods in our website does not constitute a contractual
+                    offer to sell the Services or Goods. When an Order has been submitted on the Website, we can
+                    reject it for any reason, although we will try to tell you the reason without delay.</li>
+                  <li>The Order process is set out on the Website. Each step allows you to check and amend any errors
+                    before submitting the Order. It is your responsibility to check that you have used the ordering
+                    process correctly.</li>
+                  <li>A Contract will be formed for the Services ordered only when you receive an email from us
+                    confirming the Order (Order Confirmation). You must ensure that the Order Confirmation is complete
+                    and accurate and inform us immediately of any errors. We are not responsible for any inaccuracies
+                    in the Order placed by you. By placing an Order you agree to us giving you confirmation of the
+                    Contract by means of an email with all information in it (ie the Order Confirmation). You will
+                    receive the Order Confirmation within a reasonable time after making the Contract, but in any
+                    event not later than the delivery of any Goods supplied under the Contract, and before performance
+                    begins of any of the Services.</li>
+                  <li>Any quotation or estimate of Fees (as defined below) is valid for a maximum period of 1 day from
+                    its date, unless we expressly withdraw it at an earlier time.</li>
+                  <li>No variation of the Contract, whether about description of the Services, Fees or otherwise, can
+                    be made after it has been entered into unless it is one of the Fee Variation amounts described in
+                    Section 27 below or otherwise unless the variation is agreed by the Customer and the Supplier in
+                    writing.</li>
+                  <li>We intend that these Terms and Conditions apply only to a Contract entered into by you as a
+                    Consumer. If this is not the case, you must tell us, so that we can provide you with a different
+                    contract with terms which are more appropriate for you and which might, in some respects, be
+                    better for you, eg by giving you rights as a business.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="fees-and-payment" class="mb-16">
+            <h3 class="mb-5">Fees and Payment</h2>
+              <div class="post-content">
+                <ol start="26">
+                  <li>The fees (Fees) for the Services, the price of any Goods (if not included in the Fees) and any
+                    additional delivery or other charges that are set out on the Website at the date we accept the
+                    Order, or such other price as we may agree in writing. Prices for Services may be calculated on a
+                    fixed price or on a standard daily rate basis.</li>
+                  <li>Fees are subject to Fee Variation, which can increase the Fees for the Services even after the
+                    date that the Order was accepted. These are for fees, costs and surcharges that cannot be known at
+                    the time we accept the Order, including, but not limited to, duties,  taxes, ancillary charges,
+                    demurrage fees, shipping surcharges (such as BAF, CAF, War Risk, Fuel Surcharges and other) and
+                    any other fee that we deem to be unable to define at the date we accept the order.</li>
+                  <li>
+                    <div>Fees and charges include VAT at the rate applicable at the time of the Order and shall be
+                      paid in line with the terms stated on your invoice.</div>
+                  </li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="duration" class="mb-16">
+            <h3 class="mb-5">Duration</h2>
+              <div class="post-content">
+                <ol start="29">
+                  <li>The Contract continues as long as it takes us to perform the Services.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="successors-and-our-sub-contractors" class="mb-16">
+            <h3 class="mb-5">Successors and our sub-contractors</h2>
+              <div class="post-content">
+                <ol start="30">
+                  <li>Either party can transfer the benefit of this Contract to someone else, and will remain liable
+                    to the other for its obligations under the Contract. The Supplier will be liable for the acts of
+                    any sub-contractors who it chooses to help perform its duties.</li>
+                </ol>
+
+              </div>
+          </article>
+          <article id="excluding-liability" class="mb-16">
+            <h3 class="mb-5">Excluding liability</h2>
+              <div class="post-content">
+                <ol start="31">
+                  <li>The Supplier does not exclude liability for: (i) any fraudulent act or omission; or (ii) death
+                    or personal injury caused by negligence or breach of the Supplier’s other legal obligations.
+                    Subject to this, we are not liable for (i) loss which was not reasonably foreseeable to both
+                    parties at the time when the Contract was made, or (ii) loss (eg loss of profit) to your business,
+                    trade, craft or profession which would not be suffered by a Consumer – because we believe you are
+                    not buying the Services and Goods wholly or mainly for your business, trade, craft or profession.
+                  </li>
+                  <li>
+                    <div class="gs">
+                      <div class="">
+                        <div id=":1q2" class="ii gt">
+                          <div id=":1r8" class="a3s aXjCH ">
+                            <div dir="ltr">If at any time the performance of the Services is or will be affected by
+                              any hindrance, risk, delay, difficulty or disadvantage of whatsoever kind (including the
+                              condition of the Goods or an Underlying Carrier becoming insolvent) which cannot be
+                              avoided by the exercise of reasonable effort, the Carrier may, without notice to the
+                              Merchant and whether or not the Services have commenced, elect to either:<br />
+                              (a) treat the performance of the Services as terminated and place the Goods at the
+                              Merchant’s disposal at any place which the Carrier shall deem safe and convenient,
+                              whereupon delivery shall be deemed to have been<br />
+                              made and the responsibility of the Carrier in respect of such Goods shall cease;
+                              or<br />
+                              (b) without prejudice to the Carrier&#8217;s continuing right to abandon the Services
+                              under clause (a) continue with the carriage of the Goods to the place designated for
+                              delivery. In any event the Carrier shall be entitled to full Freight for Goods received
+                              for Services and additional compensation for any extra costs resulting from the
+                              circumstances referred to above in this clause. <span style="color: #888888;"><br
+                                  clear="all" /></span></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+
+              </div>
+          </article>
+         
+          <article id="attribution" class="mb-16">
+            <h3 class="mb-5">Attribution</h2>
+              <div class="post-content">
+                <ol start="36">
+                  <li>These terms and conditions were created using a document from Rocket Lawyer <a
+                      href="#" target="_blank"
+                      rel="noopener noreferrer">(https://www.rocketlawyer.co.uk)</a>.</li>
+                </ol>
+
+              </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  
+  {% endblock content %}
+
+  <!-- FOOTER -->
+  <footer class="footer bg-darkNavy c--white overflow-hidden">
+    <div class="o-wrapper">
+      <div class="o-layout o-layout--stretch items-center">
+        <div class="o-layout__item u-6/16@desktop u-1/2@tablet u-1/1">
+          <div class="md:max-w-24 w100 c--white text-center md:text-left">
+            <div class="mb-6 md:mb-10 flex justify-center md:justify-start">
+              <a href="{% url "homepage" %}" class="w-40 mr-4">
+                <img class="w-40 h-auto" src="/assets/themes/theme/dist/images/zencargo-logo--white.svg"
+                  alt="Apexxcourier Logo" />
+              </a>
+            </div>
+            <h3 class="u-h2 mx-auto md:ml-0 max-w-sm fs--36">
+              Transform your courier and logistics experience
+            </h3>
+            <p class="fs--19 max-w-xs mx-auto md:ml-0">
+              Track and monitor all your shipment, get them delivered.
+            </p>
+            <div class="buttons mt-6 mb-12 md:mb-0">
+              <div class="o-layout o-layout--stretch o-layout--auto">
+                <div class="o-layout__item">
+                  <a href="{% url "getstarted" %}" target="" class="c-btn c-btn--mainGreen">Get started</a>
+                </div>
+                <div class="o-layout__item" style="padding-left: 16px">
+                  <a href="{% url "tracking" %}" target="" class="c-btn c-btn--faded">Track Shipment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-layout__item u-10/16@desktop u-1/2@tablet u-1/1 img--contain footer__ship">
+          <img width="1380" height="610" src="/assets/uploads/2020/02/footer-image.png"
+            class="attachment-full size-full pointer-events-none" alt="" loading="lazy" />
+        </div>
+      </div>
+  
+      <main class="footer__main">
+        <nav class="footer__nav--top md:flex items-center md:justify-between">
+          <a href="#">Resources</a>
+          <a href="/about/index.html">About</a>
+          <a href="/careers/index.html">Careers</a>
+  
+          <a href="/contact/index.html">Contact</a>
+        </nav>
+  
+        <div class="footer__hr"></div>
+  
+        <div class="o-layout o-layout--huge o-layout--stretch footer__two-cols">
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="footer__main__left">
+              <div class="footer__hr md:hidden"></div>
+  
+              <h5 class="footer__heading">Latest News</h5>
+              <div class="o-layout o-layout--small">
+                <div class="o-layout__item u-1/2 mb-2">
+                  <a href="#" class="fs--15 hover:opacity-75 trans leading-snug inline-block c--white">Q3 Product
+                    release
+                    and roadmap</a>
+                </div>
+                <div class="o-layout__item u-1/2 mb-2">
+                  <a href="#" class="fs--15 hover:opacity-75 trans leading-snug inline-block c--white">Episode 19: How
+                    can
+                    you be a shipper of choice? A
+                    discussion with Chantal McRoberts</a>
+                </div>
+              </div>
+  
+              <div id="footer-newsletter-form"></div>
+  
+              <div class="footer-language-switcher flex flex-col bg-transparent mt-10 relative">
+                <div
+                  class="ls-select ls-active-lang flex flex-row border border-white border-opacity-20 rounded-md py-3 px-4 items-center w-40 cursor-pointer">
+                  <img src="/assets/themes/theme/dist/images/flags/en.png" alt="en" class="ls-flag w-4 mr-3" />
+                  <span class="flex-grow text-sm">English</span>
+                  <div class="ls-chev mt-1" role="button">
+                    <img src="/assets/themes/theme/dist/images/down-chev.svg" alt="" />
+                  </div>
+                </div>
+  
+                <div
+                  class="is-open-target absolute bottom-0 left-0 py-3 px-4 bg-darkBlue border border-white border-opacity-20 rounded-md w-40">
+                  <ul>
+                    <li>
+                      <a href="/index-2.html" class="no-underline whitespace-nowrap text-white">
+                        <img src="/assets/themes/theme/dist/images/flags/en.png" alt=""
+                          class="flex-shrink-0 mr-2 inline-block w-4" />
+                        <span class="no-underline text-sm" lang="en">English</span>
+                      </a>
+                    </li>
+  
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="footer__main__right md:ml-auto md:mr-0">
+              <h5 class="footer__heading">Solutions</h5>
+              <nav class="col-cnt-2">
+                <a href="/about/index.html">Why Apexxcourier</a>
+                <a href="/supply-chain-optimisation/index.html">Supply Chain Optimisation</a>
+                <a href="/platform/index.html">Platform</a>
+                <a href="/freight-forwarding/index.html">Freight Forwarding</a>
+                <a href="/supply-chain-optimisation/grow-revenue/index.html">Grow Revenue</a>
+                <a href="/supply-chain-optimisation/reduce-freight-costs/index.html">Reduce Freight Costs</a>
+                <a href="/supply-chain-optimisation/release-working-capital/index.html">Release Working Capital</a>
+                <a href="#">Sustainable Supply Chain</a>
+                <a href="#">Supply Chain Agility</a>
+              </nav>
+  
+              <div class="footer__hr footer__hr--to-right"></div>
+  
+              <h5 class="footer__heading">Industries</h5>
+              <nav class="col-cnt-2">
+                <a href="#">Plastics &#038; Packaging</a>
+                <a href="#">Fashion, Apparel &#038; Sports</a>
+                <a href="#">FMCG</a>
+                <a href="#">Luxury &#038; Beauty</a>
+                <a href="#">Home &#038; Furnishings</a>
+                <a href="#">Health &#038; Supplements</a>
+                <a href="#">Building Materials & Home Improvement</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </main>
+  
+      <div class="footer__hr mb-0 hidden md:block"></div>
+  
+      <div class="footer__bottom md:flex justify-between items-center fs--14 mt-6 md:mt-0 md:mb-0">
+        <div class="md:flex text-center md:text-left">
+          <div class="opacity-75 mb-4 md:mb-0 hidden md:inline-block">
+            &copy; Apexxcourier 2023
+          </div>
+          <div class="md:ml-16">
+            <a href="index.html" class="c--white opacity-75">Terms & Conditions</a>
+            <a href="/privacy-policy/index.html" class="c--white opacity-75 ml-6">Privacy Policy</a>
+            <a href="/code-of-conduct/index.html" class="c--white opacity-75 ml-6">Code of Conduct</a>
+          </div>
+        </div>
+  
+        <div class="footer__social flex mt-6 md:mt-0 justify-center md:justify-end">
+          <a href="https://www.facebook.com/" class="block" target="_blank">
+            <img src="/assets/themes/theme/dist/images/social/facebook.svg" alt="" />
+          </a>
+          <a href="https://twitter.com/" class="block" target="_blank">
+            <img src="/assets/themes/theme/dist/images/social/twitter.svg" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/company/Apexxcourier/" class="block" target="_blank">
+            <img src="/assets/themes/theme/dist/images/social/linkedin.svg" alt="" />
+          </a>
+        </div>
+        <div class="opacity-75 mt-6 mb-8 md:hidden text-center">
+          &copy; Apexxcourier 2023
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/assets/themes/theme/dist/webpack/main9726.js"></script>
+
+
+  <script type='text/javascript' id='leadin-script-loader-js-js-extra'>
+    /* <![CDATA[ */
+    var leadin_wordpress = { "userRole": "visitor", "pageType": "page", "leadinPluginVersion": "9.0.35" };
+      /* ]]> */
+  </script>
+
+  <script type='text/javascript' id='divi-builder-custom-script-js-extra'>
+    /* <![CDATA[ */
+    var et_builder_utils_params = { "condition": { "diviTheme": false, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
+    var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+    var et_pb_custom = { "ajaxurl": "wp-admin\/admin-ajax.php", "images_uri": "assets\/themes\/theme\/images", "builder_images_uri": "assets\/plugins\/divi-builder\/includes\/builder\/images", "et_frontend_nonce": "a1e3de3316", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "582078364e", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "25", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "yes", "is_shortcode_tracking": "", "tinymce_uri": "assets\/plugins\/divi-builder\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": { "context": [".pum-overlay"] } };
+    var et_pb_box_shadow_elements = [];
+      /* ]]> */
+  </script>
+  <script type='text/javascript' src='/assets/plugins/divi-builder/js/scripts.min838c.js'
+    id='divi-builder-custom-script-js'></script>
+  <script type='text/javascript' src='/assets/plugins/divi-builder/core/admin/js/common838c.js'
+    id='et-core-common-js'></script>
+
+
+
+
+</body>
+
+
+
+
+<!-- Mirrored from Apexxcourier.com/terms/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 15:23:51 GMT -->
+</html>
+
+
+
+
+
+
+
+
+

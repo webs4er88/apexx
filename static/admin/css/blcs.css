@@ -1,0 +1,520 @@
+.intro {
+    padding: 80px;
+    /* height: 100vh; */
+    background-image: linear-gradient(
+            to right,
+            rgba(196, 193, 193, 0.103),
+            rgba(255, 255, 255, 0)
+        ),
+        url(../images/delivery-woman-carrying-cardboard-box-isolated.jpg);
+    background-size: cover;
+}
+.intro .intro-main {
+    width: 60%;
+    background-color: rgb(233, 227, 227);
+    padding: 40px;
+    box-shadow: 6px 6px 3px rgba(236, 144, 144, 0.5);
+    border-radius: 4px;
+}
+.track-section {
+    display: flex;
+    width: 100%;
+    padding: 80px;
+    align-items: center;
+    font-family: akrobatregular;
+}
+.track-section .track-bg {
+    margin: 30px 10px;
+    height: 600px;
+    width: 500px;
+    background-image: url(../logo/phone-1.svg);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.track-section .track-bg img {
+    transform: rotate(4deg);
+}
+.track-section .track-content {
+    width: calc(100% - 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+.track-content .track-info {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.track-content .track-caption {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: rgb(22, 22, 22);
+}
+.blcs-color {
+    color: #e80f0f;
+}
+.blcs-bg-color {
+    background-color: #e80f0f !important;
+}
+
+@keyframes blink{
+    0%, 50% {background-color: white;}
+    51%, 100% {background-color: greenyellow;}
+
+}
+
+.status-indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 15px;
+    animation: beep 1s infinite;
+}
+
+
+
+
+
+.pie {
+    height: 200px !important;
+    width: 200px !important;
+}
+.pie svg {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+.track-content .blcs-btn {
+    width: 50%;
+    margin: 25px auto;
+    display: inline-block;
+    background-color: #e80f0f;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 120px;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    box-shadow: none;
+    transition: all 1s;
+}
+.track-content .blcs-btn:hover {
+    box-shadow: 4px 4px 7px #701717a1;
+}
+.d-box {
+    position: absolute;
+    bottom: -60px;
+    right: -30px;
+    height: 250px;
+    width: 250px;
+    background-color: #df4b4b;
+    border-top-left-radius: 50px;
+    z-index: -1;
+    transform: rotate(9deg);
+    box-shadow: -60px 85px 20px #e80f0f67;
+}
+.about-section {
+    padding: 80px 80px;
+    background-color: #df4b4b;
+    color: rgb(27, 27, 27);
+    letter-spacing: 2px;
+    display: flex;
+}
+.about-section div:nth-child(1) {
+    width: 40%;
+    position: relative;
+    margin-right: 55px;
+}
+.about-section div img {
+    width: 100%;
+    border-radius: 8px;
+}
+.about-section a {
+    background-color: rgba(17, 17, 17, 0.842);
+}
+.about-section .overlay {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px 40px;
+    position: absolute;
+
+    bottom: 0;
+    background-image: linear-gradient(
+        to bottom,
+        white,
+        rgba(255, 255, 255, 0.103)
+    );
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.package-section {
+    padding: 80px;
+}
+
+.features {
+    padding: 60px;
+    margin: 0 !important;
+}
+.features h1 {
+    font-size: 55px;
+    /* font-weight: bold; */
+    color: #dd2c00;
+    font-family: akrobatblack;
+}
+.features .d-flex .unit-4-icon {
+    font-size: 5rem;
+    color: #dd2c00;
+    margin-right: 20px;
+}
+.features .d-flex:nth-child(1),
+.features .d-flex:nth-child(2),
+.features .d-flex:nth-child(3) {
+    padding-bottom: 30px;
+}
+.features .d-flex {
+    display: flex;
+}
+.features .content a {
+    color: #dd2c00;
+}
+.features .content h3 {
+    font-weight: bold;
+}
+.features .content {
+    font-size: 18px;
+}
+.track-container {
+    background-image: url(../logo/blcs.svg) n;
+    background-position: center;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.track-box-container {
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+}
+.track-box {
+    width: 40%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(197, 197, 197);
+}
+
+.track-box .pie-container {
+    width: 200px;
+    margin: 15px auto;
+}
+.track-box .track-info,
+.track-box .track-location {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.track-box .track-info p {
+    font-size: 19px;
+}
+.track-box .track-location span i {
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.track-box .track-location {
+    margin-top: 20px;
+}
+.track-box .track-location span {
+    font-size: 21px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.track-box .content {
+    display: flex;
+}
+.track-box .track-box-icon {
+    width: 20%;
+    font-size: 45px;
+    margin-right: 23px;
+}
+
+.track-box .track-box-details {
+    font-size: 18px;
+}
+.track-box .track-box-amount {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(3, 133, 31);
+}
+.timeline ul li {
+    border-radius: 6px;
+}
+@media screen and (min-width: 700px) {
+    .timeline li div location {
+        font-size: 22px;
+    }
+    .timeline li div location {
+        font-size: 22px;
+    }
+    .timeline li div status,
+    .timeline li div time {
+        font-size: 18px;
+    }
+}
+
+.ps-img {
+    height: fit-content !important;
+}
+
+.map-container {
+    padding: 60px 30px;
+}
+.map-container .map-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.map-container #map {
+    width: 68%;
+    border-radius: 4px;
+    height: 450px;
+    margin-right: 5px;
+}
+.map-container #side-panel {
+    width: 30%;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 350px) and (max-width: 450px) {
+    .intro {
+        padding: 0px;
+    }
+    .intro .intro-main {
+        width: 100%;
+        background-color: rgb(233, 227, 227);
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 4px;
+    }
+    .intro .intro-main p:nth-child(1) {
+        font-size: 35px !important;
+        padding: 20px !important;
+    }
+
+    .intro .intro-main p:nth-child(2) {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .track-section {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    .track-section .track-bg {
+        margin: 10px 2px;
+        height: fit-content;
+        width: 100%;
+    }
+    .track-section .track-bg img {
+        transform: rotate(-8deg) translateX(-85px);
+    }
+    .track-section .track-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .track-content .track-info {
+        font-size: 20px;
+        line-height: 30px;
+        padding-bottom: 10px;
+    }
+    .track-content .track-caption {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 18px;
+        color: rgb(22, 22, 22);
+    }
+
+    .track-content .blcs-btn {
+        width: 100%;
+        margin: 6px auto;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .track-box .track-location {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+}
+
+    .about-section {
+        padding: 20px 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-section div:nth-child(1) {
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    .about-section div:nth-child(2) p:nth-child(1) {
+        font-size: 40px !important;
+    }
+
+    .package-section {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .package-section .ps-img {
+        box-sizing: border-box;
+        order: 1;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .package-section .ps-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .user-feedback {
+        padding: 35px 20px !important;
+    }
+    .uf-item {
+        width: 90%;
+        margin: 10px 5% 0 5%;
+    }
+
+    .track-box-container {
+        flex-wrap: wrap;
+        padding: 1px;
+    }
+    .track-box {
+        width: 100%;
+        padding: 30px 15px;
+        margin-bottom: 20px;
+    }
+    .track-box-icon {
+        font-size: 35px !important;
+    }
+    .track-box .track-box-amount {
+        font-size: 21px;
+        letter-spacing: 1px;
+        color: rgb(3, 133, 31);
+    }
+
+    .map-container {
+        padding: 40px 10px;
+        flex-direction: column;
+    }
+
+    .map-container #map {
+        width: 100% !important;
+        height: calc(100vh - 200px);
+        margin-right: 0px;
+    }
+    .map-container #side-panel {
+        display: none;
+        width: 0px;
+    }
+    .tr-section {
+        justify-content: center;
+    }
+
+    /* End of Media Query */
+}
+#google_translate_element .goog-te-gadget {
+    width: 250px !important;
+}
+#google_translate_element .goog-te-combo {
+    display: inline-block !important;
+    padding: 15px;
+    font-size: 21px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+.tr-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-left: 8px; */
+}
+.tr-section ul {
+    display: flex;
+    margin-left: 20px;
+}
+.tr-section ul li a {
+    font-size: 18px;
+    color: #e80f0f;
+    padding-right: 15px;
+}
+#google_translate_element {
+    margin-left: 15px;
+}
+
+.copyright {
+    background: #1b1b1b;
+    padding: 10px 0;
+    color: #fefefe;
+}
+.copyright .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0 !important;
+}
+.copyright .row span {
+    font-size: 16px;
+    color: wheat;
+    letter-spacing: 1px;
+}
+.footer-widget .heading-col {
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.bottom-des li {
+    display: block !important;
+    height: fit-content !important;
+    padding: 5px !important;
+    padding-left: 0 !important;
+}
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 251, 255);
+    position: fixed;
+    z-index: 999;
+}
+.preloader object {
+    width: 200px;
+    height: 200px;
+}
+@media screen and (max-width: 490px) {
+    .preloader object {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+

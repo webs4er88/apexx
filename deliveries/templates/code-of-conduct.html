@@ -1,0 +1,1653 @@
+{% extends "homepage.html" %}
+{% load static %}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en_GB">
+
+
+<!-- Mirrored from Apexxcourier.com/code-of-conduct/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 15:23:52 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <style>
+    /* hide all img elements until the svg is injected to prevent "unstyled image flash" */
+    img.injectable {
+      visibility: hidden;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/assets/themes/theme/dist/webpack/styles9726.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&amp;display=swap" rel="stylesheet" />
+  <title>Code of Conduct - Apexxcourier</title>
+
+  <style id="global-styles-inline-css" type="text/css">
+    body {
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%);
+      --wp--preset--duotone--dark-grayscale: url("#wp-duotone-dark-grayscale");
+      --wp--preset--duotone--grayscale: url("#wp-duotone-grayscale");
+      --wp--preset--duotone--purple-yellow: url("#wp-duotone-purple-yellow");
+      --wp--preset--duotone--blue-red: url("#wp-duotone-blue-red");
+      --wp--preset--duotone--midnight: url("#wp-duotone-midnight");
+      --wp--preset--duotone--magenta-yellow: url("#wp-duotone-magenta-yellow");
+      --wp--preset--duotone--purple-green: url("#wp-duotone-purple-green");
+      --wp--preset--duotone--blue-orange: url("#wp-duotone-blue-orange");
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+  </style>
+  <link rel="stylesheet" id="divi-builder-style-css"
+    href="/assets/plugins/divi-builder/css/style-static.min838c.css" type="text/css" media="all" />
+  <script type="text/javascript" src="/wp-includes/js/jquery/jquery.minaf6c.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.mind617.js"
+    id="jquery-migrate-js"></script>
+  <style type="text/css" id="wp-custom-css">
+    a.post_cta {
+      display: table !important;
+      font-weight: normal !important;
+      text-align: center !important;
+      text-decoration: none !important;
+      -moz-transition: all 0.4s ease !important;
+      -webkit-transition: all 0.4s ease !important;
+      -o-transition: all 0.4s ease !important;
+      background: #462f9b !important;
+      border-radius: 6px !important;
+      border-width: 0px !important;
+      color: rgb(255, 255, 255) !important;
+      font-family: sans-serif !important;
+      height: auto !important;
+      transition: all 0.4s ease !important;
+      padding: 10px 25px !important;
+      text-shadow: none !important;
+      width: auto !important;
+      line-height: 1.5em !important;
+      margin: auto;
+    }
+  </style>
+
+
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="/assets/themes/theme/dist/images/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="/assets/themes/theme/dist/images/favicons/favicon-16x16.png" />
+
+</head>
+
+
+<body
+  class="page--legal privacy-policy page-template page-template-legal page page-id-3 et_divi_builder et-pb-theme-themosis et-db title--privacy-policy   ">
+
+  <!-- DESKTOP VIEW NAVIGATION BAR -->
+  <header class="header">
+    <div class="o-wrapper o-wrapper--large w100 h100">
+      <div class="flex justify-between items-center w100 h100">
+        <a href="/index-2.html" class="header__logo mr-4">
+          <img src="/assets/themes/theme/dist/images/zencargo-logo--white.svg" alt="Apexxcourier Logo" />
+        </a>
+
+        <nav>
+          <a class="nav--solutions post-type--nav_menu_item has-sub" data-subnav-open="solutions"
+            href="/platform/index.html">Solutions</a>
+          <div class="submenu submenu--solutions" data-subnav-target="solutions">
+            <div class="o-wrapper o-wrapper--large">
+              <div class="o-layout">
+                <div class="o-layout__item u-3/16@tablet hidden lg:inline-block">
+                  <a href="/platform/index.html" class="inline-block">
+                    <h3 class="text-white font-medium">Solutions</h3>
+                  </a>
+                </div>
+
+                <div class="o-layout__item u-13/16@desktop">
+                  <div class="o-layout">
+                    <div class="o-layout__item u-1/3@desktop colu-0">
+                      <div class="ssni__title ssni__title--0 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Supply Chain as a Service
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-6 flex nav--platform post-type--page" href="/platform/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Platform.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Platform
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Drive action with smart insights
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--supply-chain-optimisation post-type--page"
+                          href="/supply-chain-optimisation/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41"
+                              src="/assets/uploads/2020/02/Supply-Chain-Optimisation.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Supply Chain Optimisation
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Tailored Solutions For Your Supply Chain
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--freight-forwarding post-type--page"
+                          href="/freight-forwarding/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Freight-Forwarding.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Freight Forwarding
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Global Logistics Management
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@desktop colu-1">
+                      <div class="ssni__title ssni__title--1 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Supply Chain Optimisation
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-6 flex nav--grow-revenue post-type--page"
+                          href="/supply-chain-optimisation/grow-revenue/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Grow Revenue
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Reduce stock outs and improve customer service
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--reduce-freight-costs post-type--page"
+                          href="/supply-chain-optimisation/reduce-freight-costs/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Reduce Freight Costs
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Manage landed costs and grow your margins
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--release-working-capital post-type--page"
+                          href="/supply-chain-optimisation/release-working-capital/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Release Working Capital
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Deploy capital effectively and reduce
+                              unnecessary inventory
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@desktop colu-2">
+                      <div class="ssni__title ssni__title--2 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Industries
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-4 flex nav--plastics-packaging post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Plastics &#038; Packaging
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--fashion-apparel-sports post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Fashion, Apparel &#038; Sports
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--fmcg post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              FMCG
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--luxury-beauty post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Luxury &#038; Beauty
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--homeware post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Home & Furniture
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--health post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Health &#038; Supplements
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--building-materials-home-improvement post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Building Materials & Home Improvement
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav--resources post-type--page has-sub" href="/tracking/index.html">Tracking</a>
+          <a class="nav--company post-type--nav_menu_item has-sub" data-subnav-open="company" href="#">Company</a>
+          <div class="submenu submenu--company" data-subnav-target="company">
+            <div class="o-wrapper o-wrapper--large">
+              <div class="o-layout">
+                <div class="o-layout__item u-4/16@desktop hidden lg:inline-block">
+                  <h3 class="text-white font-medium">Company</h3>
+                </div>
+
+                <div class="o-layout__item u-8/16@desktop u-1/1">
+                  <div class="o-layout">
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--about post-type--page"
+                        href="/about/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            About
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read the story and meet the team building a world
+                            with smarter trade.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--careers post-type--page"
+                        href="/careers/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Careers
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Help us solve one of the world’s oldest problems.
+                            We’re growing fast.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--contact-zencargo post-type--page"
+                        href="/contact-Apexxcourier/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Contact Apexxcourier
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Want to get in touch? Find out how to drop us a
+                            line.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex" href="#">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Press
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read our latest press announcements and
+                            achievements about the business
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 sm:my-8 lg:mt-0 lg:mb-8 flex" href="#">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Apexxcourier Team
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read insights from our Apexxcourier team, a dedicated
+                            group of experts in the supply chain industry
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="o-layout__item u-4/16 hidden lg:inline-block">
+                  <img class="company-subnav-image" src="/assets/themes/theme/dist/images/company-subnav.svg"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="nav--careers post-type--page" href="/careers/index.html">Careers</a>
+        </nav>
+
+        <div class="header__actions">
+
+          <a href="/tracking/index.html" class="login c--inherit ml-2 c-btn c-btn--faded">Track Shipment</a>
+        </div>
+
+        <button class="tg-hamburger" type="button">
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGAION BAR -->
+  <div class="mobile-nav bg-darkNavy fixed inset-0 overflow-hidden overflow-y-auto">
+    <div class="min-h-full flex flex-col justify-between">
+      <div class="nav-container o-wrapper w100 pb-6 flex flex-col flex-auto">
+        <nav>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/about/index.html">Why Apexxcourier</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/tracking/index.html">Tracking</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/about/index.html">About</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/contact-Apexxcourier/index.html">Contact Apexxcourier
+          </a>
+
+          <a class="nav--careers post-type--page" href="/careers/index.html">Careers</a>
+        </nav>
+
+        <a href="#"
+          class="mob-caly rounded bg--tertiary p-4 flex items-center justify-between mt-8 text-navy hover:text-white">
+          <img src="assets/themes/theme/dist/images/icons/calc--alt.html" alt="Calc Alt" class="mr-4 calc-icon"
+            style="max-width: 35px" />
+          <h6 class="flex-auto">Calculate your ROI savings with Apexxcourier</h6>
+          <img src="assets/themes/theme/dist/images/right-chev.html" alt="Chev right" class="ml-4" />
+        </a>
+
+        <div class="header__actions mt-6 mb-24">
+          <div>
+            <a href="/tracking/index.html"
+              class="c-btn mb-3 c-btn--outline justify-center c-btn--outline--accent w100">Track Shipment</a>
+          </div>
+          <div>
+            <a href="/get-started/index.html" class="c-btn c-btn--accent w100 justify-center">Get started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% block content %}
+  <main class="content remodal-bg">
+
+    <div class="header-height"></div>
+
+    <section class="md:mb-32 hero hero--full-width md:flex flex-col img--cover overflow-hidden  bg--tertiary   ">
+
+
+      <div class="hero__wrapper relative flex-auto flex flex-col items-start justify-end">
+
+        <div class="absolute inset-0 img--cover">
+        </div>
+
+        <div class="o-wrapper relative w100  c--white ">
+          <div class=" max-w-md md:max-w-2xl hero__text">
+            <h6 class="mb-4 md:mb-4">Legal</h6>
+            <h1>Code of Conduct</h1>
+
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="my-16 md:my-32">
+      <div class="o-wrapper">
+
+        <div class="legal-content o-layout">
+          <div class="o-layout__item u-4/12@tablet hidden md:inline-block">
+            <div class="legal-content__nav__cont">
+              <ul class="unset-list sticky top-0">
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#message-from-the-ceo" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Message from the CEO</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#introduction" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Introduction</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#ethical-principles-and-core-values"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Ethical Principles and Core Values</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#decision-making-and-the-code-of-conduct"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Decision Making and the Code of Conduct</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#reportingspeaking-up" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Reporting/Speaking Up</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#no-retaliation" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">No Retaliation</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#equal-opportunity" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Equal Opportunity</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#harassment" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Harassment</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#bullying" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Bullying</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#conflicts-of-interest" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Conflicts of Interest</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#external-communication-on-behalf-of-the-company"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">External Communication on Behalf of the Company</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#confidentiality" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Confidentiality</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#privacy" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Privacy</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#competition-fair-dealings-and-antitrust"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Competition, Fair Dealings and Antitrust</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#bribery-and-facilitation-payments"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Bribery and Facilitation Payments</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#gifts-and-entertainment"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Gifts and Entertainment</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#political-contributions"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Political Contributions</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#charitable-contributions"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Charitable Contributions</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#record-keeping" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Record Keeping</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#protection-and-proper-use-of-company-assets"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Protection and Proper Use of Company Assets</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#money-laundering" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Money Laundering</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#insider-trading" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Insider Trading</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#health-and-safety" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Health and Safety</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#environment" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Environment</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#information-technology"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Information Technology</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#internet-use" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Internet Use</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#use-of-social-media" class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Use of Social Media</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#corporate-social-responsibility"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Corporate Social Responsibility</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="u-h4 pb-3 mb-3 font-bold">
+                  <a href="#code-of-conduct-acknowledgement"
+                    class="flex justify-between items-center c--primary link-transition">
+                    <div class="mr-6">Code of Conduct Acknowledgement</div>
+                    <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.269 1.576l5.755 5.755-5.755 5.755M1.364 7.33h11.65" stroke-width="1.8"
+                        stroke="#2DB5E6" fill="none" stroke-linecap="square" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="legal-content__main o-layout__item  u-8/12@tablet post-content">
+            <article id="message-from-the-ceo" class="mb-16">
+              <h3 class="mb-5">Message from the CEO</h2>
+                <div class="post-content">
+                  <p>Doing things right is one of our most important values at Apexxcourier. We work hard every day to
+                    provide a service that enhance the lives of people in our community, our country, and all over the
+                    world.</p>
+                  <p>We are clear about what we mean when we talk about doing things right. Not only does it mean that
+                    we provide great services, fairly priced and of exceptional quality, but it also means that every
+                    step we take in conducting those services is taken with ethics and integrity in mind.</p>
+                  <p>Doing things right is not an option at Apexxcourier. Working here means making a commitment to uphold
+                    our company values and following the code of conduct outlined in this document. Thank you for
+                    upholding our values and helping us to be the best that we can be.</p>
+                  <p><em>Alex Miersham, CEO, Apexxcourier</em></p>
+
+                </div>
+            </article>
+            <article id="introduction" class="mb-16">
+              <h3 class="mb-5">Introduction</h2>
+                <div class="post-content">
+                  <p>This Code of Conduct applies to all employees, managers, executives and freelancer or contract
+                    workers.</p>
+
+                </div>
+            </article>
+            <article id="ethical-principles-and-core-values" class="mb-16">
+              <h3 class="mb-5">Ethical Principles and Core Values</h2>
+                <div class="post-content">
+                  <p>The company’s core values and beliefs are as follows:</p>
+                  <ul>
+                    <li>Honesty</li>
+                    <li>Integrity</li>
+                    <li>Trustworthiness</li>
+                    <li>Courage</li>
+                    <li>Respect for others</li>
+                    <li>Responsibility</li>
+                    <li>Accountability</li>
+                    <li>Obedience to the law</li>
+                    <li>Empathy</li>
+                    <li>Teamwork</li>
+                    <li>Commitment to the code</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="decision-making-and-the-code-of-conduct" class="mb-16">
+              <h3 class="mb-5">Decision Making and the Code of Conduct</h2>
+                <div class="post-content">
+                  <p>When making a decision, ask yourself the following:</p>
+                  <ul>
+                    <li>Is it legal?</li>
+                    <li>Does it comply with the code?</li>
+                    <li>Does it reflect our company values and ethics?</li>
+                    <li>Does it respect the rights of others?</li>
+                    <li>If you are unsure about any of the answers, ask.</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="reportingspeaking-up" class="mb-16">
+              <h3 class="mb-5">Reporting/Speaking Up</h2>
+                <div class="post-content">
+                  <p>The company encourages all employees to ask questions and raise issues without fear of retaliation
+                    and is committed to treating reports seriously and investigating them thoroughly.</p>
+                  <p>Employees must report suspected unethical, illegal or suspicious behavior immediately. The company
+                    does not tolerate retaliation against anyone who makes a good faith report of suspected misconduct
+                    or otherwise assists with an investigation or audit.</p>
+                  <p>To report a concern:</p>
+                  <ul>
+                    <li>Talk to your manager</li>
+
+                  </ul>
+
+                </div>
+            </article>
+            <article id="no-retaliation" class="mb-16">
+              <h3 class="mb-5">No Retaliation</h2>
+                <div class="post-content">
+                  <p>Employees who report a concern in good faith cannot be subjected to any adverse employment action
+                    including:</p>
+                  <ul>
+                    <li>Unfair dismissal, demotion or suspension</li>
+                    <li>Unfair denial of a promotion, transfer or other employment benefit</li>
+                    <li>Bullying and harassment, either in person or online</li>
+                    <li>Exclusionary behavior</li>
+                    <li>Any other behavior that singles out the person unfairly</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="equal-opportunity" class="mb-16">
+              <h3 class="mb-5">Equal Opportunity</h2>
+                <div class="post-content">
+                  <p>The company will not tolerate discrimination based on race, color, religion, gender, age, national
+                    origin, sexual orientation, marital status, disability or any other protected class.</p>
+
+                </div>
+            </article>
+            <article id="harassment" class="mb-16">
+              <h3 class="mb-5">Harassment</h2>
+                <div class="post-content">
+                  <p>Treat all fellow employees, customers, business partners and other stakeholders with dignity and
+                    respect at all times.</p>
+                  <p>Any type of harassment, including physical, sexual, verbal or other, is prohibited and can result
+                    in disciplinary action up to, and including, termination.</p>
+                  <p>Harassment can include actions, language, written words or objects that create an intimidating or
+                    hostile work environment, such as:</p>
+                  <ul>
+                    <li>Yelling at or humiliating someone</li>
+                    <li>Physical violence or intimidation</li>
+                    <li>Unwanted sexual advances, invitations or comments</li>
+                    <li>Visual displays such as derogatory or sexually-oriented pictures or gestures</li>
+                    <li>Physical conduct including assault or unwanted touching</li>
+                    <li>Threats or demands to submit to sexual requests as a condition of employment or to avoid
+                      negative consequences</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="bullying" class="mb-16">
+              <h3 class="mb-5">Bullying</h2>
+                <div class="post-content">
+                  <p>We are committed to ensuring that our employees, our contractors and our customers work in safe and
+                    respectful environment that is free of bullying. Bullying can include:</p>
+                  <ul>
+                    <li>Spreading malicious rumor or gossip</li>
+                    <li>Excluding or isolating someone socially</li>
+                    <li>Establishing impossible deliverables</li>
+                    <li>Withholding necessary information or purposefully giving the wrong information</li>
+                    <li>Intimidating someone</li>
+                    <li>Impeding someone’s work</li>
+                    <li>Unfairly denying training, leave or promotion</li>
+                    <li>Constantly changing work guidelines</li>
+                    <li>Sending offensive jokes or emails</li>
+                    <li>Criticizing or belittling someone constantly</li>
+                    <li>Tampering with a person’s personal belongings or work equipment</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="conflicts-of-interest" class="mb-16">
+              <h3 class="mb-5">Conflicts of Interest</h2>
+                <div class="post-content">
+                  <p>A conflict of interest can occur when an employee’s personal activities, investments or
+                    associations compromises their judgment or ability to act in the company’s best interests. Employees
+                    should avoid the types of situations that can give rise to conflicts of interest.</p>
+                  <p>It’s important for employees to disclose any relationships, associations or activities that could
+                    create actual, potential, or even perceived, conflict of interest to their manager or the Human
+                    Resources Department.</p>
+
+                </div>
+            </article>
+            <article id="external-communication-on-behalf-of-the-company" class="mb-16">
+              <h3 class="mb-5">External Communication on Behalf of the Company</h2>
+                <div class="post-content">
+                  <p>Only the CEO, VP Operations, VP Sales and Marketing and VP Communications are authorized to
+                    represent the company to media and/or legal authorities. Employees should refer all requests for
+                    information or interviews to the Communications Department or directly to the CEO.</p>
+
+                </div>
+            </article>
+            <article id="confidentiality" class="mb-16">
+              <h3 class="mb-5">Confidentiality</h2>
+                <div class="post-content">
+                  <p>The company and its employees maintain the confidentiality of all proprietary information.
+                    Proprietary information includes all non-public information that might be harmful to the company and
+                    its customers and business partners if disclosed.</p>
+                  <p>Confidential information can include:</p>
+                  <ul>
+                    <li>Customer lists</li>
+                    <li>Supplier lists</li>
+                    <li>Pricing information</li>
+                    <li>Terms of contracts</li>
+                    <li>Company policies and procedures</li>
+                    <li>Financial statements</li>
+                    <li>Marketing plans and strategies</li>
+                    <li>Trade secrets</li>
+                    <li>Any other information that could damage the company or its customers or suppliers if it was
+                      disclosed</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="privacy" class="mb-16">
+              <h3 class="mb-5">Privacy</h2>
+                <div class="post-content">
+                  <p>The company complies with the requirements of the country’s and international privacy laws. All
+                    employees sign an agreement that contains provisions for information confidentiality and
+                    non-disclosure.</p>
+                  <p>The company and its employees do not disclose any private, personal information of:</p>
+                  <ul>
+                    <li>Employees</li>
+                    <li>Customers</li>
+                    <li>Suppliers</li>
+                    <li>Competitors</li>
+                    <li>Third parties</li>
+                  </ul>
+                  <p>Employees store all personal information securely, mark it as confidential and store it only for as
+                    long as it is needed for the purpose for which is was collected. When providing personal
+                    information, employees limit access to only those with a clear business need for the information.
+                    Employees are required to report any breaches of privacy, including the loss, theft of or
+                    unauthorized access to personal information, to their manager.</p>
+
+                </div>
+            </article>
+            <article id="competition-fair-dealings-and-antitrust" class="mb-16">
+              <h3 class="mb-5">Competition, Fair Dealings and Antitrust</h2>
+                <div class="post-content">
+                  <p>While the company competes aggressively for new business, relationships with business partners are
+                    built upon trust and mutual benefits and compliant with competition/antitrust laws.</p>
+                  <p>Employees are required to:</p>
+                  <ul>
+                    <li>Communicate the company’s products and services in a manner that is fair and accurate, and that
+                      discloses all relevant information</li>
+                    <li>Familiarize themselves with the company’s fair competition policies and remain aware of the
+                      consequences of any violation of policies or laws governing fair competition</li>
+                    <li>Consult the company’s legal department before engaging in any new practice that may affect fair
+                      competition</li>
+                    <li>Refrain from price fixing, bid rigging, and any other anti-competitive activities</li>
+                    <li>Use only publicly available information to understand business, customers, competitors, business
+                      partners, technology trends, and regulatory proposals and developments</li>
+                    <li>Advise their manager immediately of possible violations of fair competition practices</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="bribery-and-facilitation-payments" class="mb-16">
+              <h3 class="mb-5">Bribery and Facilitation Payments</h2>
+                <div class="post-content">
+                  <p>The company will not attempt to influence the judgement or behavior of a person in a position of
+                    trust by paying a bribe or kickback. This applies to persons in government and in private business.
+                  </p>
+                  <p>The company does not permit facilitation (or “grease”) payments to government officials or private
+                    business in order to secure or speed up routine actions.</p>
+                  <p>Employees are to:</p>
+                  <ul>
+                    <li>Select third parties carefully and monitor them continuously to ensure they comply with the
+                      company’s anti-bribery policies</li>
+                    <li>Keep accurate books and records at all times and monitor that funds are not being used for
+                      bribery or facilitation payments</li>
+                    <li>Refuse any offer or request for an unlawful payment and report the incident to the company’s
+                      ethics and compliance officer</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="gifts-and-entertainment" class="mb-16">
+              <h3 class="mb-5">Gifts and Entertainment</h2>
+                <div class="post-content">
+                  <p>While gifts and entertainment among business associates can be appropriate ways to strengthen ties
+                    and build goodwill, they also have the potential to create the perception that business decisions
+                    are influenced by them. The company is committed to winning business only on the merits of its
+                    products, services and people and complies with all legal requirements for giving and receiving
+                    gifts and entertainment.</p>
+                  <p>Employees are to:</p>
+                  <ul>
+                    <li>Use sound judgment and comply with the law, regarding gifts and other benefits</li>
+                    <li>Never allow gifts, entertainment or other personal benefits to influence decisions or undermine
+                      the integrity of business relationships</li>
+                    <li>Never accept gifts or entertainment that are illegal, immoral or would reflect negatively on the
+                      company</li>
+                    <li>Never accept cash, cash equivalents, stocks or other securities</li>
+                  </ul>
+                  <p>Employees may accept occasional unsolicited personal gifts of nominal value such as promotional
+                    items and may provide the same to customers and business partners.</p>
+                  <p>When in doubt, employees should check with the ethics and compliance officer before giving or
+                    receiving anything of value.</p>
+
+                </div>
+            </article>
+            <article id="political-contributions" class="mb-16">
+              <h3 class="mb-5">Political Contributions</h2>
+                <div class="post-content">
+                  <p>The company does not make political contributions. Employees are free to support any political
+                    party or entity on a personal level. However this must be kept separate from company business.</p>
+
+                </div>
+            </article>
+            <article id="charitable-contributions" class="mb-16">
+              <h3 class="mb-5">Charitable Contributions</h2>
+                <div class="post-content">
+                  <p>The company may make charitable contributions to causes and organizations that are not politically
+                    affiliated. Employees should check with the VP Operations before making any charitable contributions
+                    on behalf of the company.</p>
+
+                </div>
+            </article>
+            <article id="record-keeping" class="mb-16">
+              <h3 class="mb-5">Record Keeping</h2>
+                <div class="post-content">
+                  <p>All documents, databases, voice messages, mobile device messages, computer documents, files and
+                    photos are records.</p>
+                  <p>Employees are required to:</p>
+                  <ul>
+                    <li>maintain these records and protect their integrity for as long as required</li>
+                    <li>maintain official record keeping systems to retain and file records required for business,
+                      legal, financial, research or archival purposes</li>
+                    <li>dispose of your records according to the company’s records retention and disposition schedule
+                    </li>
+                  </ul>
+                  <p>Employees should never destroy documents in response to, or in anticipation of, an investigation or
+                    audit.</p>
+
+                </div>
+            </article>
+            <article id="protection-and-proper-use-of-company-assets" class="mb-16">
+              <h3 class="mb-5">Protection and Proper Use of Company Assets</h2>
+                <div class="post-content">
+                  <p>The company requires all employees to protect its assets. All assets should be used for legitimate
+                    purposes, efficiently, and for company business only.</p>
+                  <p>Assets include facilities, equipment, computers and information systems, telephones, employee time,
+                    confidential and proprietary information, corporate opportunities and company funds.</p>
+                  <p>Suspected incidents of fraud, theft, negligence, and waste should be reported to the VP Operations.
+                  </p>
+
+                </div>
+            </article>
+            <article id="money-laundering" class="mb-16">
+              <h3 class="mb-5">Money Laundering</h2>
+                <div class="post-content">
+                  <p>The company complies with anti-money laundering laws. Money laundering is the process of concealing
+                    illicit funds by moving them through legitimate businesses to hide their criminal origin.</p>
+                  <p>Employees must never knowingly facilitate money laundering or terrorist financing, and must take
+                    steps to prevent inadvertent use of the company’s business activities for these purposes.  Employees
+                    are required to immediately report any unusual or suspicious activities or transactions such as:</p>
+                  <ul>
+                    <li>attempted payments in cash or from an unusual financing source</li>
+                    <li>arrangements that involve the transfer of funds to or from countries or entities not related to
+                      the transaction or customer</li>
+                    <li>unusually complex deals that don’t reflect a real business purpose</li>
+                    <li>attempts to evade record-keeping or reporting requirements</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="insider-trading" class="mb-16">
+              <h3 class="mb-5">Insider Trading</h2>
+                <div class="post-content">
+                  <p>Employees may learn information about the company, associates, clients, business partners or other
+                    companies that is not publicly available. It is illegal for any individual to use information
+                    obtained in this way for personal gain or to share it with others.</p>
+                  <p>Employees are prohibited from:</p>
+                  <ul>
+                    <li>Buying or selling securities based on non-publicly available knowledge gained in the course of
+                      business</li>
+                    <li>Providing information or tips, or encourage another person to buy or sell securities based on
+                      inside information</li>
+                  </ul>
+                  <p>Employees are required to report suspected insider trading immediately to the ethics and compliance
+                    department.</p>
+
+                </div>
+            </article>
+            <article id="health-and-safety" class="mb-16">
+              <h3 class="mb-5">Health and Safety</h2>
+                <div class="post-content">
+                  <p>The company conducts business in accordance with applicable health and safety requirements and
+                    strives for continuous improvement in its health and safety policies and procedures.</p>
+                  <p>All employees are expected to perform their work in compliance with applicable health and safety
+                    laws, regulations, policies and procedures and apply safe work practices at all times in all
+                    locations.</p>
+                  <p>Applicable safety and health requirements must be communicated to visitors, customers or
+                    contractors at any company location.</p>
+                  <p>Employees are required to immediately report workplace injuries, illnesses or unsafe conditions,
+                    including “near-misses.”</p>
+
+                </div>
+            </article>
+            <article id="environment" class="mb-16">
+              <h3 class="mb-5">Environment</h2>
+                <div class="post-content">
+                  <p>The company is committed to operating in an environmentally responsible manner, from the provision
+                    of products and services, to the operation of its offices and facilities, selection of suppliers and
+                    other business activities.</p>
+                  <p>The company complies with all applicable environmental laws and regulations as well as
+                    self-directed commitments to sustainable practices and environmental protection.</p>
+
+                </div>
+            </article>
+            <article id="information-technology" class="mb-16">
+              <h3 class="mb-5">Information Technology</h2>
+                <div class="post-content">
+                  <p>The company expects its employees to help it safeguard all computer equipment and data against
+                    intentional malicious acts by individuals inside or outside the company. Cyber-security training is
+                    provided to all employees to ensure compliance with computer security policies.</p>
+                  <p>The company safeguards against inappropriate access by individuals or groups untrained in correct
+                    company policies or procedures</p>
+                  <p>The company does not use software for which it does not have a license.</p>
+
+                </div>
+            </article>
+            <article id="internet-use" class="mb-16">
+              <h3 class="mb-5">Internet Use</h2>
+                <div class="post-content">
+                  <p>The company understands that occasional personal use of the internet during work hours is a
+                    reasonable request and allows this, within reason. Employees can ask for clarification from their
+                    managers if in doubt.</p>
+                  <p>However, the company does not allow internet use to support a personal business, political venture,
+                    or embarrass the company and its customers.</p>
+
+                </div>
+            </article>
+            <article id="use-of-social-media" class="mb-16">
+              <h3 class="mb-5">Use of Social Media</h2>
+                <div class="post-content">
+                  <p>The company respects the right of employees to use social media for personal and professional
+                    purposes.</p>
+                  <p>Employees are responsible for complying with company policies and procedures when communicating on
+                    social media. Employees are accountable for any information they publish online.</p>
+                  <p>Employees are required to:</p>
+                  <ul>
+                    <li>Reveal their relationship with the company when commenting online on issues related to the
+                      company</li>
+                    <li>Respect the privacy of other employees and refrain from publishing photos of them without their
+                      consent</li>
+                    <li>Ensure any information they post related to the company is accurate</li>
+                    <li>Comply with the rules of the social media sites they use</li>
+                  </ul>
+                  <p>Employees must not:</p>
+                  <ul>
+                    <li>“Pretext”, or pretend to be someone they are not online</li>
+                    <li>Speak on behalf of the company if they are not expressly authorized to do so</li>
+                    <li>Share confidential information about the company, its clients, stakeholders or suppliers</li>
+                    <li>Post comments or pictures that could harm the company’s brand, reputation or commercial
+                      interests</li>
+                  </ul>
+
+                </div>
+            </article>
+            <article id="corporate-social-responsibility" class="mb-16">
+              <h3 class="mb-5">Corporate Social Responsibility</h2>
+                <div class="post-content">
+                  <p>The company understands that corporate social responsibility extends to our entire supply chain.
+                    This encompasses not only the products and services supplied but also the human rights, ethics and
+                    social practices of our company and its suppliers.</p>
+                  <p>One goal of the corporate social responsibility procurement program is to build partnerships with
+                    like-minded organizations by actively seeking out business partners who are the most environmentally
+                    and workforce friendly.</p>
+                  <p>Forced Labor: The company and its suppliers shall employ all employees under their own free will
+                    with no one being subjected to bonded or forced labor. This policy applies to not only the
+                    supplier’s business operations but also those of their supplier network with which the company
+                    conducts its business.</p>
+                  <p>Child Labor: The company and its suppliers shall not employ any people under the minimum legal
+                    working age of the country in which they work.</p>
+                  <p>Responsible Environmental Impact: The company and its suppliers shall produce measurable
+                    environmental impact reports and conduct ongoing efforts to reduce environmental pollution while
+                    increasing sustainability.</p>
+                  <p>The company encourages and supports involvement in the community that has supported it. This
+                    includes supporting local business and talent by, for example, sourcing local products and services,
+                    where appropriate, and showcasing the work of local artists in the company’s public spaces.</p>
+                  <p>Charitable involvement is important to the company and a charity committee meets ones a month to
+                    discuss and execute potential and ongoing charitable projects.</p>
+
+                </div>
+            </article>
+            <article id="code-of-conduct-acknowledgement" class="mb-16">
+              <h3 class="mb-5">Code of Conduct Acknowledgement</h2>
+                <div class="post-content">
+                  <p>By certifying to the company code of conduct, you acknowledge that:</p>
+                  <ul>
+                    <li>You have read the entire code of conduct and understand your responsibilities related to it.
+                    </li>
+                    <li>You have had the opportunity to ask questions to clarify any unclear aspects of the code.</li>
+                    <li>You agree to abide by its principles.</li>
+                    <li>You agree to report to the company any violations of the code.</li>
+                    <li>You agree to cooperate in any investigations of violations of the code.</li>
+                  </ul>
+
+                </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  {% endblock content %}
+
+  <!-- FOOTER -->
+  <footer class="footer bg-darkNavy c--white overflow-hidden">
+    <div class="o-wrapper">
+      <div class="o-layout o-layout--stretch items-center">
+        <div class="o-layout__item u-6/16@desktop u-1/2@tablet u-1/1">
+          <div class="md:max-w-24 w100 c--white text-center md:text-left">
+            <div class="mb-6 md:mb-10 flex justify-center md:justify-start">
+              <a href="/index-2.html" class="w-40 mr-4">
+                <img class="w-40 h-auto" src="{% static '/assets/themes/theme/dist/images/zencargo-logo--white.svg' %}"
+                  alt="Apexxcourier Logo" />
+              </a>
+            </div>
+            <h3 class="u-h2 mx-auto md:ml-0 max-w-sm fs--36">
+              Transform your courier and logistics experience
+            </h3>
+            <p class="fs--19 max-w-xs mx-auto md:ml-0">
+              Track and monitor all your shipment, get them delivered.
+            </p>
+            <div class="buttons mt-6 mb-12 md:mb-0">
+              <div class="o-layout o-layout--stretch o-layout--auto">
+                <div class="o-layout__item">
+                  <a href="/get-started/index.html" target="" class="c-btn c-btn--mainGreen">Get started</a>
+                </div>
+                <div class="o-layout__item" style="padding-left: 16px">
+                  <a href="/tracking/index.html" target="" class="c-btn c-btn--faded">Track Shipment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="o-layout__item u-10/16@desktop u-1/2@tablet u-1/1 img--contain footer__ship">
+          <img width="1380" height="610" src="{% static '/assets/uploads/2020/02/footer-image.png' %}"
+            class="attachment-full size-full pointer-events-none" alt="" loading="lazy" />
+        </div>
+      </div>
+
+      <main class="footer__main">
+        <nav class="footer__nav--top md:flex items-center md:justify-between">
+          <a href="#">Resources</a>
+          <a href="/about/index.html">About</a>
+          <a href="/careers/index.html">Careers</a>
+
+          <a href="/contact/index.html">Contact</a>
+        </nav>
+
+        <div class="footer__hr"></div>
+
+        <div class="o-layout o-layout--huge o-layout--stretch footer__two-cols">
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="footer__main__left">
+              <div class="footer__hr md:hidden"></div>
+
+              <h5 class="footer__heading">Latest News</h5>
+              <div class="o-layout o-layout--small">
+                <div class="o-layout__item u-1/2 mb-2">
+                  <a href="#" class="fs--15 hover:opacity-75 trans leading-snug inline-block c--white">Q3 Product
+                    release
+                    and roadmap</a>
+                </div>
+                <div class="o-layout__item u-1/2 mb-2">
+                  <a href="#" class="fs--15 hover:opacity-75 trans leading-snug inline-block c--white">Episode 19: How
+                    can
+                    you be a shipper of choice? A
+                    discussion with Chantal McRoberts</a>
+                </div>
+              </div>
+
+              <div id="footer-newsletter-form"></div>
+
+              <div class="footer-language-switcher flex flex-col bg-transparent mt-10 relative">
+                <div
+                  class="ls-select ls-active-lang flex flex-row border border-white border-opacity-20 rounded-md py-3 px-4 items-center w-40 cursor-pointer">
+                  <img src="{% static '/assets/themes/theme/dist/images/flags/en.png' %}" alt="en" class="ls-flag w-4 mr-3" />
+                  <span class="flex-grow text-sm">English</span>
+                  <div class="ls-chev mt-1" role="button">
+                    <img src="{% static '/assets/themes/theme/dist/images/down-chev.svg' %}" alt="" />
+                  </div>
+                </div>
+
+                <div
+                  class="is-open-target absolute bottom-0 left-0 py-3 px-4 bg-darkBlue border border-white border-opacity-20 rounded-md w-40">
+                  <ul>
+                    <li>
+                      <a href="/index-2.html" class="no-underline whitespace-nowrap text-white">
+                        <img src="/assets/themes/theme/dist/images/flags/en.png" alt=""
+                          class="flex-shrink-0 mr-2 inline-block w-4" />
+                        <span class="no-underline text-sm" lang="en">English</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="o-layout__item u-1/2@tablet">
+            <div class="footer__main__right md:ml-auto md:mr-0">
+              <h5 class="footer__heading">Solutions</h5>
+              <nav class="col-cnt-2">
+                <a href="/about/index.html">Why Apexxcourier</a>
+                <a href="/supply-chain-optimisation/index.html">Supply Chain Optimisation</a>
+                <a href="/platform/index.html">Platform</a>
+                <a href="/freight-forwarding/index.html">Freight Forwarding</a>
+                <a href="/supply-chain-optimisation/grow-revenue/index.html">Grow Revenue</a>
+                <a href="/supply-chain-optimisation/reduce-freight-costs/index.html">Reduce Freight Costs</a>
+                <a href="/supply-chain-optimisation/release-working-capital/index.html">Release Working Capital</a>
+                <a href="#">Sustainable Supply Chain</a>
+                <a href="#">Supply Chain Agility</a>
+              </nav>
+
+              <div class="footer__hr footer__hr--to-right"></div>
+
+              <h5 class="footer__heading">Industries</h5>
+              <nav class="col-cnt-2">
+                <a href="#">Plastics &#038; Packaging</a>
+                <a href="#">Fashion, Apparel &#038; Sports</a>
+                <a href="#">FMCG</a>
+                <a href="#">Luxury &#038; Beauty</a>
+                <a href="#">Home &#038; Furnishings</a>
+                <a href="#">Health &#038; Supplements</a>
+                <a href="#">Building Materials & Home Improvement</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="footer__hr mb-0 hidden md:block"></div>
+
+      <div class="footer__bottom md:flex justify-between items-center fs--14 mt-6 md:mt-0 md:mb-0">
+        <div class="md:flex text-center md:text-left">
+          <div class="opacity-75 mb-4 md:mb-0 hidden md:inline-block">
+            &copy; Apexxcourier 2024
+          </div>
+          <div class="md:ml-16">
+            <a href="/terms/index.html" class="c--white opacity-75">Terms & Conditions</a>
+            <a href="/privacy-policy/index.html" class="c--white opacity-75 ml-6">Privacy Policy</a>
+            <a href="index.html" class="c--white opacity-75 ml-6">Code of Conduct</a>
+          </div>
+        </div>
+
+        <div class="footer__social flex mt-6 md:mt-0 justify-center md:justify-end">
+          <a href="https://www.facebook.com/" class="block" target="_blank">
+            <img src="/assets/themes/theme/dist/images/social/facebook.svg" alt="" />
+          </a>
+          <a href="https://twitter.com/" class="block" target="_blank">
+            <img src="/assets/themes/theme/dist/images/social/twitter.svg" alt="" />
+          </a>
+          <a href="https://www.linkedin.com/company/Apexxcourier/" class="block" target="_blank">
+            <img src="/assets/themes/theme/dist/images/social/linkedin.svg" alt="" />
+          </a>
+        </div>
+        <div class="opacity-75 mt-6 mb-8 md:hidden text-center">
+          &copy; Apexxcourier 2024
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/assets/themes/theme/dist/webpack/main9726.js"></script>
+
+
+  <script type='text/javascript' id='leadin-script-loader-js-js-extra'>
+    /* <![CDATA[ */
+    var leadin_wordpress = { "userRole": "visitor", "pageType": "page", "leadinPluginVersion": "9.0.35" };
+      /* ]]> */
+  </script>
+
+  <script type='text/javascript' id='divi-builder-custom-script-js-extra'>
+    /* <![CDATA[ */
+    var et_builder_utils_params = { "condition": { "diviTheme": false, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
+    var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+    var et_pb_custom = { "ajaxurl": "wp-admin\/admin-ajax.php", "images_uri": "assets\/themes\/theme\/images", "builder_images_uri": "assets\/plugins\/divi-builder\/includes\/builder\/images", "et_frontend_nonce": "a1e3de3316", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "582078364e", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "25", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "yes", "is_shortcode_tracking": "", "tinymce_uri": "assets\/plugins\/divi-builder\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": { "context": [".pum-overlay"] } };
+    var et_pb_box_shadow_elements = [];
+      /* ]]> */
+  </script>
+  <script type='text/javascript' src='/assets/plugins/divi-builder/js/scripts.min838c.js'
+    id='divi-builder-custom-script-js'></script>
+  <script type='text/javascript' src='/assets/plugins/divi-builder/core/admin/js/common838c.js'
+    id='et-core-common-js'></script>
+
+
+
+
+</body>
+
+
+
+<!-- Mirrored from Apexxcourier.com/code-of-conduct/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 15:23:52 GMT -->
+</html>

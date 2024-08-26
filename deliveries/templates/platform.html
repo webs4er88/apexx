@@ -1,0 +1,733 @@
+
+
+
+{% extends "homepage.html" %}
+{% load static %}
+
+
+    {% block content %}
+    <main class="content remodal-bg">
+      <div class="header-height"></div>
+      <section
+        class="md:mb-32 hero hero--no-image md:flex flex-col img--cover overflow-hidden mb-0"
+      >
+        <div class="o-wrapper w100">
+          <div class="hero__wrapper">
+            <div class="max-w-md md:max-w-2xl hero__text">
+              <h6 class="mb-4 md:mb-4">Apexxcourier Platform</h6>
+              <h1>Advanced Logistics Intelligence</h1>
+
+              <p class="max-w-1xl">
+                At Apexxcourier, we are proud to introduce our cutting-edge Advanced Logistics Intelligence (ALI) system, a
+                game-changing technology that is revolutionizing the way we operate and deliver exceptional courier services. With ALI,
+                we are taking logistics to a whole new level, harnessing the power of data-driven insights and automation to optimize
+                every aspect of our operations.
+              </p>
+
+              <div
+                class="buttons flex justify-center md:justify-start items-center flex-wrap"
+              >
+                <a href="{% url "getstarted" %}" class="c-btn c-btn--accent"
+                  >Get Started</a
+                >
+                <!-- <a
+                  href="#"
+                  target="_blank"
+                  class="c-btn c-btn--arrow mt-6 md:mt-0 md:ml-8"
+                  >Diagnostic tool</a
+                > -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-shot">
+        <div class="o-wrapper o-wrapper--large">
+          <div class="bg--tertiary pt-10">
+            <div class="img--contain">
+              <img
+                width="1044"
+                height="420"
+                src="{% static 'assets/uploads/2020/02/platform-hero-4.svg' %}"
+                class="attachment-full size-full pointer-events-none"
+                alt=""
+                loading="lazy"
+                role=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-16 md:my-32">
+        <div class="o-wrapper">
+          <div class="flex justify-center">
+            <div class="intro-center text-center max-w-3xl">
+              <h2 class="mb-4 md:mb-6 md:mx-auto">
+                Smart Logistics Management
+              </h2>
+              <p class="fs--20 md:mx-auto mt-0 max-w-xl">
+                Transform how you plan, execute and improve your courier packages
+                with powerful analytics and visibility over every step of your
+                product journey.
+              </p>
+            </div>
+          </div>
+          <div class="md:flex justify-between mt-20">
+            <div
+              class="u-1/3@tablet u-1/1 mb-12 text-center flex flex-col items-center max-w-xs mx-auto"
+            >
+              <div class="icon--65">
+                <img
+                  width="68"
+                  height="73"
+                  src="{% static 'assets/uploads/2020/02/lap.svg' %}"
+                  class="attachment-tog-small size-tog-small pointer-events-none"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <h4 class="c--primary pt-6">
+                Efficient, Effective Collaboration
+              </h4>
+              <p class="pt-2">
+                Say goodbye to spreadsheets, emails and chasing. Apexxcourier shares
+                key insights across your business, connecting stakeholders to
+                help you make the right decisions, together.
+              </p>
+            </div>
+            <div
+              class="u-1/3@tablet u-1/1 mb-12 text-center flex flex-col items-center max-w-xs mx-auto"
+            >
+              <div class="icon--65">
+                <img
+                  width="65"
+                  height="67"
+                  src="{% static '/assets/uploads/2020/02/box-2.svg' %}"
+                  class="attachment-tog-small size-tog-small pointer-events-none"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <h4 class="c--primary pt-6">SKU-Level Agility</h4>
+              <p class="pt-2">
+                Catch exceptions before they become problems with live tracking
+                of every SKU from order to delivery.
+              </p>
+            </div>
+            <div
+              class="u-1/3@tablet u-1/1 text-center flex flex-col items-center max-w-xs mx-auto"
+            >
+              <div class="icon--65">
+                <img
+                  width="62"
+                  height="58"
+                  src="{% static '/assets/uploads/2020/02/van.svg' %}"
+                  class="attachment-tog-small size-tog-small pointer-events-none"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <h4 class="c--primary pt-6">Action-Focused Analytics</h4>
+              <p class="pt-2">
+                Track product and supplier performance to eliminate
+                inefficiencies and drive long-term process improvements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="my-16 md:my-32 image-cta relative bg--primary o-wrapper--enor"
+      >
+        <div
+          class="image-cta__media absolute inset-0 img--cover img--zoom"
+          data-aos="init"
+        >
+          <img
+            width="2560"
+            height="1130"
+            src="{% static '/assets/uploads/2020/02/contact-hero-2-scaled.jpg' %}"
+            class="attachment-full size-full pointer-events-none"
+            alt=""
+            loading="lazy"
+            
+          />
+        </div>
+        <div class="o-wrapper">
+          <div
+            class="image-cta__wrapper pt-64 pb-16 md:py-32 relative c--white"
+          >
+            <div class="max-w-xl">
+              <h2 class="fs--42">
+                Track your cargo, build carrier relationships and combat
+                disruption with our experts
+              </h2>
+              <a
+                href="{% url "freightforwarding" %}"
+                class="c-btn c-btn--outline c-btn--outline--trans mt-8"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="two-col-content o-wrapper--max relative my-16 md:my-20 overflow-x-hidden overflow-y-auto md:overflow-visible play-video-when-inview"
+      >
+        <div class="o-wrapper relative">
+          <div
+            class="flex flex-col-reverse gap-y-10 lg:gap-y-0 lg:flex lg:flex-row items-center justify-between lg:flex-row-reverse"
+          >
+            <div class="u-9/16@desktop img--cover items-center">
+              <video
+                width="100%"
+                height="100%"
+                poster="#"
+                preload="metadata"
+                playsinline
+                mute
+                loop
+              >
+                <source
+                  src="{% static '/assets/uploads/2020/02/collaboration.conv_.mp4' %}"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="w-full md:w-3/4 lg:max-w-38p w-38p">
+              <div class="tcc__content mx-auto mt-0 lg:mt-0 lg:py-8 ml-0">
+                <h6 class="c--accent mb-2">Collaboration</h6>
+                <h2 class="mb-6 fs--40 text-darkNavy">Connect To Our Teams</h2>
+                <p class="fs--19">
+                  Apexxcourier brings live logistics insights into the heart of
+                  your business. With targeted updates, you can connect to our
+                  teams, align your decision-making and move your business
+                  forward together.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-20 mt-12 md:my-20 block-icon-grid">
+        <div class="o-wrapper">
+          <div class="o-layout o-layout--large -my-6">
+            <div class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 my-6">
+              <div class="flex flex-col">
+                <div class="item__img">
+                  <img
+                    width="24"
+                    height="24"
+                    src="{% static '/assets/uploads/2020/02/open-in-browser.svg' %}"
+                    class="attachment-tog-tiny size-tog-tiny pointer-events-none"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="c--primary mt-6">Logistics</h3>
+                <p class="mt-3 fs--17">
+                  Stay in control every step of the way with live SKU
+                  visibility. Catch exceptions early with live updates to ensure
+                  that your cargo always arrives on time.
+                </p>
+              </div>
+            </div>
+            <div class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 my-6">
+              <div class="flex flex-col">
+                <div class="item__img">
+                  <img
+                    width="25"
+                    height="25"
+                    src="{% static '/assets/uploads/2020/02/storage-unit-1.svg' %}"
+                    class="attachment-tog-tiny size-tog-tiny pointer-events-none"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="c--primary mt-6">Commercial</h3>
+                <p class="mt-3 fs--17">
+                  Effectively manage supply to keep up with changes in demand.
+                  Apexxcourier Intake Planning monitors all of your inbound
+                  inventory so you can adapt quickly and avoid stockouts.
+                </p>
+              </div>
+            </div>
+            <div class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 my-6">
+              <div class="flex flex-col">
+                <div class="item__img">
+                  <img
+                    width="24"
+                    height="21"
+                    src="{% static '/assets/uploads/2020/02/ranking.svg' %}"
+                    class="attachment-tog-tiny size-tog-tiny pointer-events-none"
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="c--primary mt-6">Finance</h3>
+                <p class="mt-3 fs--17">
+                  Unlock more powerful reporting with the information you need
+                  to instantly calculate inventory, landed cost and ROI to
+                  maximise business profitability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-16 md:my-32">
+        <div class="o-wrapper">
+          <section
+            class="calc-cta calc-cta--dark-blue text-center md:text-left c--white flex flex-col md:flex-row justify-between items-center"
+          >
+            <div class="calc-cta__icon">
+              <img
+                onload="SVGInject(this)"
+                class="injectable"
+                src="{% static '/assets/themes/theme/dist/images/icons/calc--dark-blue.svg' %}"
+                alt="Calculator Icon"
+              />
+            </div>
+            <div class="calc-cta__text pt-5 pb-8 md:py-0">
+              <h3>What's holding your supply chain back?</h3>
+              <p class="mt-1 md:mt-0">
+                Speak with our experts to discover our digital solutions
+              </p>
+            </div>
+
+            <div>
+              <a href="{% url "getstarted" %}" class="c-btn c-btn--white"
+                >Get Started</a
+              >
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section
+        class="two-col-content o-wrapper--max relative my-16 md:my-20 overflow-x-hidden overflow-y-auto md:overflow-visible play-video-when-inview"
+      >
+        <div class="o-wrapper relative">
+          <div
+            class="flex flex-col-reverse gap-y-10 lg:gap-y-0 lg:flex lg:flex-row items-center justify-between"
+          >
+            <div class="u-9/16@desktop img--cover items-center">
+              <video
+                width="100%"
+                height="100%"
+                poster="#"
+                preload="metadata"
+                playsinline
+                mute
+                loop
+              >
+                <source
+                  src="{% static '/assets/uploads/2020/02/lead-time-reduction-3.mp4' %}"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+
+            <div class="w-full md:w-3/4 lg:max-w-38p w-38p">
+              <div class="tcc__content mx-auto mt-0 lg:mt-0 lg:py-8 mr-0">
+                <h6 class="c--accent mb-2">Value Through Data</h6>
+                <h2 class="mb-6 fs--40 text-darkNavy">
+                  Optimise Your Intake Planning
+                </h2>
+                <p class="fs--19">
+                  Stay ahead of demand with our Intake Planning platform. With
+                  live visibility of your planned, inbound and in-production
+                  SKUs your commercial team can catch potential shortfalls
+                  earlier and eliminate stock outs before they ever happen.
+                </p>
+
+                <a
+                  href="{% url "supplychain" %}"
+                  class="c-btn c-btn--accent mt-8"
+                  >Learn more</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16 md:mt-32 inter bg--tertiary mb-0">
+        <div class="inter__container bg--tertiary pt-16 md:pt-24 pb-16">
+          <div class="o-wrapper">
+            <div class="o-layout o-layout--large">
+              <div class="o-layout__item u-1/2@tablet">
+                <div class="md:max-w-md">
+                  <h6 class="c--accent">Integrations</h6>
+                  <h2>Integrations to Enhance Your Customer Experience</h2>
+                </div>
+              </div>
+              <div class="o-layout__item u-1/2@tablet">
+                <div class="md:max-w-lg">
+                  <h6 class="hidden md:block opacity-0">_</h6>
+                  <p class="fs--20 mt-6">
+                    Our open API gives you the chance to integrate Apexxcourier into
+                    your other core business apps. Unlock a seamless data flow,
+                    deep analytics and instant updates on your supply chain.
+                  </p>
+                  <a href="/get-started/index.html" class="c-btn c-btn--arrow"
+                    >Book a demo</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="mt-16 md:mt-24">
+              <h5 class="c--primary">Popular Integrations</h5>
+              <div
+                class="mt-4 mb-8 opacity-75"
+                style="height: 1px; background: #c2c7cf"
+              ></div>
+              <div class="o-layout o-layout--stretch">
+                <div class="o-layout__item u-1/2@tablet">
+                  <a
+                    href="#"
+                    class="flex shadow-box shadow-box-- items-center c--inherit pointer-events-none select-none"
+                  >
+                    <div class="shad-image">
+                      <div class="o-ratio">
+                        <div class="o-ratio__content img--contain bg--tertiary">
+                          <img
+                            width="152"
+                            height="152"
+                            src="{% static '/assets/uploads/2020/02/wms.png' %}"
+                            class="attachment-full size-full pointer-events-none"
+                            alt=""
+                            loading="lazy"
+                            role=""
+                            
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <h4>Warehouse Management Systems</h4>
+                      <p class="mb-0 mt-2">
+                        Optimise your storage capacity based on a complete
+                        picture of stock coverage, including ordered,
+                        in-production and in-transit SKUS.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="o-layout__item u-1/2@tablet">
+                  <a
+                    href="#"
+                    class="flex shadow-box shadow-box-- items-center c--inherit pointer-events-none select-none"
+                  >
+                    <div class="shad-image">
+                      <div class="o-ratio">
+                        <div class="o-ratio__content img--contain bg--tertiary">
+                          <img
+                            width="152"
+                            height="152"
+                            src="{% static '/assets/uploads/2020/02/ecommerce.png' %}"
+                            class="attachment-full size-full pointer-events-none"
+                            alt=""
+                            loading="lazy"
+                            role=""
+                          
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <h4>E-Commerce Platforms</h4>
+                      <p class="mb-0 mt-2">
+                        Accelerate your sales with live supply chain data so
+                        customers know exactly what they’re buying and when to
+                        expect it.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="o-layout__item u-1/2@tablet">
+                  <a
+                    href="#"
+                    class="flex shadow-box shadow-box-- items-center c--inherit pointer-events-none select-none"
+                  >
+                    <div class="shad-image">
+                      <div class="o-ratio">
+                        <div class="o-ratio__content img--contain bg--tertiary">
+                          <img
+                            width="152"
+                            height="152"
+                            src="{% static '/assets/uploads/2020/02/map.png' %}"
+                            class="attachment-full size-full pointer-events-none"
+                            alt=""
+                            loading="lazy"
+                            role=""
+                            
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <h4>ERP Systems</h4>
+                      <p class="mb-0 mt-2">
+                        Unlock powerful reporting live insights from your
+                        logistics network to plan better, track ROI and
+                        accurately monitor stock coverage.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+                <div class="o-layout__item u-1/2@tablet">
+                  <a
+                    href="#"
+                    class="flex shadow-box shadow-box-- items-center c--inherit pointer-events-none select-none"
+                  >
+                    <div class="shad-image">
+                      <div class="o-ratio">
+                        <div class="o-ratio__content img--contain bg--tertiary">
+                          <img
+                            width="76"
+                            height="75"
+                            src="{% static '/assets/uploads/2020/01/box-1.svg' %}"
+                            class="attachment-full size-full pointer-events-none"
+                            alt=""
+                            loading="lazy"
+                            role=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ml-6">
+                      <h4>Demand Planning Software</h4>
+                      <p class="mb-0 mt-2">
+                        Optimise your order volumes and timelines based on the
+                        most accurate supplier, lead time and OTIF data.
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="centered-testimonial te-border">
+        <div class="o-wrapper text-center">
+          <div class="py-16 md:py-28">
+            
+
+            <blockquote
+              class="u-h2 mx-auto mt-8 fs--24"
+              style="line-height: 1.5; letter-spacing: 0"
+            >
+              "Working with Apexxcourier has directly increased our product margin.
+              Their insightful advice has helped us continuously optimise and
+              execute cost savings across our network."
+            </blockquote>
+
+            <div class="author mt-8">
+              <h5 class="c--primary font-medium fs--16">
+                Dan Moolding,
+                <span class="c--grey font-normal"
+                  >Logistics Director, Smoon</span
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="my-16 md:my-32 all-features overflow-x-hidden overflow-y-visible"
+      >
+        <div class="o-wrapper relative pb-20">
+          <img
+            src="{% static '/assets/themes/theme/dist/images/icons/train.svg' %}"
+            class="all-features-train"
+            alt="Train"
+          />
+          <div class="o-layout">
+            <div class="o-layout__item u-1/2@tablet">
+              <div class="md:max-w-lg mb-8">
+                <h6 class="c--accent">All Features</h6>
+                <h2 class="c--primary">
+                  Tools that move your business forward
+                </h2>
+                <p class="md:max-w-md fs--20">
+                  Every feature in Apexxcourier is designed to save you time, so you
+                  can spend less time chasing information and more time helping
+                  your supply chain run smoothly.
+                </p>
+              </div>
+            </div>
+            <div class="o-layout__item u-1/2@tablet">
+              <div class="all-features__image bg--tertiary">
+                <img
+                  width="457"
+                  height="246"
+                  src="{% static '/assets/uploads/2020/02/platform-shot.svg' %}"
+                  class="attachment-tog-small size-tog-small pointer-events-none"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+          <main class="mt-16 md:mt-28">
+            <div class="o-layout o-layout--large">
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">
+                  Purchase Order Management
+                </h3>
+                <p>
+                  Track supplier performance with full order visibility from
+                  manufacture to delivery.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">Intake Planning</h3>
+                <p>
+                  Track inbound SKUs across locations, orders and suppliers to
+                  optimise inventory levels.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">Delay Notifications</h3>
+                <p>
+                  Find and solve issues instantly with proactive notifications.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">SKU-Level Visibility</h3>
+                <p>
+                  Track your network performance by SKU to monitor stock levels
+                  throughout the supply chain.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">Cross-Team Collaboration</h3>
+                <p>
+                  Connect your stakeholders in one place with all relevant data
+                  and context.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">Network Management</h3>
+                <p>
+                  Manage the details of your team, network and offices on one
+                  platform.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">Emissions Tracking</h3>
+                <p>
+                  Make better sustainability decisions with full clarity over
+                  your emissions.
+                </p>
+              </div>
+              <div
+                class="o-layout__item u-1/3@tablet u-1/2@bigmobile u-1/1 mb-6 md:mb-10"
+              >
+                <h3 class="c--primary mb-2 fs--18">Document Management</h3>
+                <p>
+                  Never lose another document, with all your essential items
+                  stored online.
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+      </section>
+      <section class="py-16 md:py-24 icon-cards bg--tertiary">
+        <div class="o-wrapper">
+          <div class="o-layout">
+            <div
+              class="o-layout__item text-center md:text-left mb-16 md:text-center u-1/1@desktop"
+            >
+              <div class="w100">
+                <h2>Solutions</h2>
+              </div>
+            </div>
+
+            <div class="o-layout__item">
+              <div class="icon-cards-container">
+                <div class="o-layout o-layout--stretch">
+                  <div class="o-layout__item u-1/2@bigmobile">
+                    <a
+                      href="/supply-chain-optimisation/index.html"
+                      class="shadow-box shadow-box--offset items-center c--inherit"
+                    >
+                      <div class="md:mr-4 flex flex-col justify-between h100">
+                        <div>
+                          <h3>Supply Chain Optimisation</h3>
+                          <p
+                            class="mb-0 md:mt-2 md:mr-6 fs--18 leading-relaxed"
+                          >
+                            Tailored Solutions For Your Supply Chain
+                          </p>
+                        </div>
+                      </div>
+
+                      <img
+                        width="50"
+                        height="46"
+                        src="{% static '/assets/uploads/2020/02/sco.svg' %}"
+                        class="attachment-full size-full pointer-events-none"
+                        alt=""
+                        loading="lazy"
+                        role=""
+                      />
+                    </a>
+                  </div>
+
+                  <div class="o-layout__item u-1/2@bigmobile">
+                    <a
+                      href="/freight-forwarding/index.html"
+                      class="shadow-box shadow-box--offset items-center c--inherit"
+                    >
+                      <div class="md:mr-4 flex flex-col justify-between h100">
+                        <div>
+                          <h3>Digital Freight Forwarding</h3>
+                          <p
+                            class="mb-0 md:mt-2 md:mr-6 fs--18 leading-relaxed"
+                          >
+                            Experienced Logistics Implementation
+                          </p>
+                        </div>
+                      </div>
+
+                      <img
+                        width="54"
+                        height="46"
+                        src="{% static '/assets/uploads/2020/01/ship.svg' %}"
+                        class="attachment-full size-full pointer-events-none"
+                        alt=""
+                        loading="lazy"
+                        role=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    {% endblock content %}
+ 

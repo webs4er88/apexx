@@ -1,0 +1,1154 @@
+
+
+{% extends "homepage.html" %}
+
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en_GB">
+
+
+<!-- Mirrored from Apexxcourier.com/contact-Apexxcourier/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 15:23:38 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <style>
+    /* hide all img elements until the svg is injected to prevent "unstyled image flash" */
+    img.injectable {
+      visibility: hidden;
+    }
+  </style>
+
+  <link rel="stylesheet" href="/assets/themes/theme/dist/webpack/styles9726.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&amp;display=swap" rel="stylesheet" />
+  <title>Contact - Apexxcourier</title>
+
+  <style id="global-styles-inline-css" type="text/css">
+    body {
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%);
+      --wp--preset--duotone--dark-grayscale: url("#wp-duotone-dark-grayscale");
+      --wp--preset--duotone--grayscale: url("#wp-duotone-grayscale");
+      --wp--preset--duotone--purple-yellow: url("#wp-duotone-purple-yellow");
+      --wp--preset--duotone--blue-red: url("#wp-duotone-blue-red");
+      --wp--preset--duotone--midnight: url("#wp-duotone-midnight");
+      --wp--preset--duotone--magenta-yellow: url("#wp-duotone-magenta-yellow");
+      --wp--preset--duotone--purple-green: url("#wp-duotone-purple-green");
+      --wp--preset--duotone--blue-orange: url("#wp-duotone-blue-orange");
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+  </style>
+  <link rel="stylesheet" id="divi-builder-style-css"
+    href="/assets/plugins/divi-builder/css/style-static.min838c.css" type="text/css" media="all" />
+  <script type="text/javascript" src="/wp-includes/js/jquery/jquery.minaf6c.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.mind617.js"
+    id="jquery-migrate-js"></script>
+  <style type="text/css" id="wp-custom-css">
+    a.post_cta {
+      display: table !important;
+      font-weight: normal !important;
+      text-align: center !important;
+      text-decoration: none !important;
+      -moz-transition: all 0.4s ease !important;
+      -webkit-transition: all 0.4s ease !important;
+      -o-transition: all 0.4s ease !important;
+      background: #462f9b !important;
+      border-radius: 6px !important;
+      border-width: 0px !important;
+      color: rgb(255, 255, 255) !important;
+      font-family: sans-serif !important;
+      height: auto !important;
+      transition: all 0.4s ease !important;
+      padding: 10px 25px !important;
+      text-shadow: none !important;
+      width: auto !important;
+      line-height: 1.5em !important;
+      margin: auto;
+    }
+  </style>
+
+
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="/assets/themes/theme/dist/images/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="/assets/themes/theme/dist/images/favicons/favicon-16x16.png" />
+
+</head>
+
+<body
+  class="page--contact page-template page-template-contact page page-id-39 et_divi_builder et-pb-theme-themosis et-db title--contact-zencargo   ">
+
+
+
+  <!-- DESKTOP VIEW NAVIGATION BAR -->
+  <header class="header">
+    <div class="o-wrapper o-wrapper--large w100 h100">
+      <div class="flex justify-between items-center w100 h100">
+        <a href="/index-2.html" class="header__logo mr-4">
+          <img src="/assets/themes/theme/dist/images/zencargo-logo--white.svg" alt="Apexxcourier Logo" />
+        </a>
+  
+        <nav>
+          <a class="nav--solutions post-type--nav_menu_item has-sub" data-subnav-open="solutions"
+            href="/platform/index.html">Solutions</a>
+          <div class="submenu submenu--solutions" data-subnav-target="solutions">
+            <div class="o-wrapper o-wrapper--large">
+              <div class="o-layout">
+                <div class="o-layout__item u-3/16@tablet hidden lg:inline-block">
+                  <a href="/platform/index.html" class="inline-block">
+                    <h3 class="text-white font-medium">Solutions</h3>
+                  </a>
+                </div>
+  
+                <div class="o-layout__item u-13/16@desktop">
+                  <div class="o-layout">
+                    <div class="o-layout__item u-1/3@desktop colu-0">
+                      <div class="ssni__title ssni__title--0 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Supply Chain as a Service
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-6 flex nav--platform post-type--page" href="/platform/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Platform.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+  
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Platform
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Drive action with smart insights
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--supply-chain-optimisation post-type--page"
+                          href="/supply-chain-optimisation/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Supply-Chain-Optimisation.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+  
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Supply Chain Optimisation
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Tailored Solutions For Your Supply Chain
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--freight-forwarding post-type--page"
+                          href="/freight-forwarding/index.html">
+                          <div class="mr-3 subnav-icon">
+                            <img width="40" height="41" src="/assets/uploads/2020/02/Freight-Forwarding.svg"
+                              class="attachment-tog-tiny size-tog-tiny pointer-events-none" alt="" loading="lazy" />
+                          </div>
+  
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Freight Forwarding
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Global Logistics Management
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@desktop colu-1">
+                      <div class="ssni__title ssni__title--1 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Supply Chain Optimisation
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-6 flex nav--grow-revenue post-type--page"
+                          href="/supply-chain-optimisation/grow-revenue/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Grow Revenue
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Reduce stock outs and improve customer service
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--reduce-freight-costs post-type--page"
+                          href="/supply-chain-optimisation/reduce-freight-costs/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Reduce Freight Costs
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Manage landed costs and grow your margins
+                            </p>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-6 flex nav--release-working-capital post-type--page"
+                          href="/supply-chain-optimisation/release-working-capital/index.html">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Release Working Capital
+                            </div>
+                            <p class="fs--15 font-light leading-snug text-white">
+                              Deploy capital effectively and reduce
+                              unnecessary inventory
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="o-layout__item u-1/3@desktop colu-2">
+                      <div class="ssni__title ssni__title--2 md:mb-6 mb-4 fs--14 font-medium text-white opacity-80">
+                        Industries
+                      </div>
+                      <div class="">
+                        <a class="mb-3 md:mb-4 flex nav--plastics-packaging post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Plastics &#038; Packaging
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--fashion-apparel-sports post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Fashion, Apparel &#038; Sports
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--fmcg post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              FMCG
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--luxury-beauty post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Luxury &#038; Beauty
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--homeware post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Home & Furniture
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--health post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Health &#038; Supplements
+                            </div>
+                          </div>
+                        </a>
+                        <a class="mb-3 md:mb-4 flex nav--building-materials-home-improvement post-type--page" href="#">
+                          <div>
+                            <div class="ni__heading text-white leading-snug">
+                              Building Materials & Home Improvement
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav--resources post-type--page has-sub" href="/tracking/index.html">Tracking</a>
+          <a class="nav--company post-type--nav_menu_item has-sub" data-subnav-open="company" href="#">Company</a>
+          <div class="submenu submenu--company" data-subnav-target="company">
+            <div class="o-wrapper o-wrapper--large">
+              <div class="o-layout">
+                <div class="o-layout__item u-4/16@desktop hidden lg:inline-block">
+                  <h3 class="text-white font-medium">Company</h3>
+                </div>
+  
+                <div class="o-layout__item u-8/16@desktop u-1/1">
+                  <div class="o-layout">
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--about post-type--page"
+                        href="/about/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            About
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read the story and meet the team building a world
+                            with smarter trade.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--careers post-type--page"
+                        href="/careers/index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Careers
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Help us solve one of the world’s oldest problems.
+                            We’re growing fast.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex nav--contact-zencargo post-type--page"
+                        href="index.html">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Contact Apexxcourier
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Want to get in touch? Find out how to drop us a
+                            line.
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 mb-0 sm:my-8 lg:mt-0 lg:mb-8 flex" href="#">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Press
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read our latest press announcements and
+                            achievements about the business
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="o-layout__item u-1/2@bigmobile">
+                      <a class="my-4 sm:my-8 lg:mt-0 lg:mb-8 flex" href="#">
+                        <div>
+                          <div class="ni__heading text-white leading-snug">
+                            Apexxcourier Team
+                          </div>
+                          <p class="fs--15 font-light text-white mt-1 leading-snug">
+                            Read insights from our Apexxcourier team, a dedicated
+                            group of experts in the supply chain industry
+                          </p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="o-layout__item u-4/16 hidden lg:inline-block">
+                  <img class="company-subnav-image" src="/assets/themes/theme/dist/images/company-subnav.svg"
+                    alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <a class="nav--careers post-type--page" href="/careers/index.html">Careers</a>
+        </nav>
+  
+        <div class="header__actions">
+  
+          <a href="/tracking/index.html" class="login c--inherit ml-2 c-btn c-btn--faded">Track Shipment</a>
+        </div>
+  
+        <button class="tg-hamburger" type="button">
+          <div>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <div class="tr-section">
+      <p class="">Translate</p>
+      <div id="google_translate_element" style="margin-right: 0px;">
+    
+      </div>
+    
+      <p class=" hide-on-med-and-down" style="margin: 0 10px 0 0 ;"> info@Apexxcourier.com</p>
+      <p class=" hide-on-med-and-down">3530 Co Rd 341, Mckinney, TX75071</p>
+    
+    
+    </div>
+  
+  <!-- MOBILE NAVIGAION BAR -->
+  <div class="mobile-nav bg-darkNavy fixed inset-0 overflow-hidden overflow-y-auto">
+    <div class="min-h-full flex flex-col justify-between">
+      <div class="nav-container o-wrapper w100 pb-6 flex flex-col flex-auto">
+        <nav>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/about/index.html">Why Apexxcourier</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/tracking/index.html">Tracking</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="/about/index.html">About</a>
+          <a class="nav--why-zencargo post-type--nav_menu_item" href="index.html">Contact Apexxcourier
+          </a>
+  
+          <a class="nav--careers post-type--page" href="/careers/index.html">Careers</a>
+        </nav>
+  
+        <a href="#"
+          class="mob-caly rounded bg--tertiary p-4 flex items-center justify-between mt-8 text-navy hover:text-white">
+          <img src="assets/themes/theme/dist/images/icons/calc--alt.html" alt="Calc Alt" class="mr-4 calc-icon"
+            style="max-width: 35px" />
+          <h6 class="flex-auto">Calculate your ROI savings with Apexxcourier</h6>
+          <img src="assets/themes/theme/dist/images/right-chev.html" alt="Chev right" class="ml-4" />
+        </a>
+  
+        <div class="header__actions mt-6 mb-24">
+          <div>
+            <a href="/tracking/index.html"
+              class="c-btn mb-3 c-btn--outline justify-center c-btn--outline--accent w100">Track Shipment</a>
+          </div>
+          <div>
+            <a href="/get-started/index.html" class="c-btn c-btn--accent w100 justify-center">Get started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% block content %}
+  
+
+
+
+  <main class="content remodal-bg">
+
+    <div class="header-height"></div>
+
+    <section class="md:mb-32 hero hero--full-width md:flex flex-col img--cover overflow-hidden  bg--tertiary   ">
+
+
+      <div class="hero__wrapper relative flex-auto flex flex-col items-start justify-end">
+
+        <div class="absolute inset-0 img--cover">
+          <img width="2560" height="1130" src="{% static '/assets/uploads/2020/02/contact-hero-2-scaled.jpg' %}"
+            class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+            />
+        </div>
+
+        <div class="o-wrapper relative w100  c--white ">
+          <div class=" max-w-md md:max-w-2xl hero__text">
+            <h6 class="mb-4 md:mb-4">Contact</h6>
+            <h1>Get in touch today</h1>
+
+
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="my-12 md:my-20 callout-boxes">
+      <div class="o-wrapper">
+        <div class="o-layout o-layout--stretch">
+          <div class="o-layout__item u-1/2@tablet text-center md:text-left  mb-6 md:mb-0 ">
+            <div class="py-4 callout-boxes__item md:max-w-md flex flex-col justify-between md:pr-6 mx-auto">
+              <div>
+                <h2 class="md:max-w-sm">Want to start working with Apexxcourier?</h2>
+                <p>Book a call with one of our supply chain consultants to find out how Apexxcourier could make your supply
+                  chain your competitive advantage.</p>
+                <a href="{% url "getstarted" %}" class="c-btn c-btn--accent mr-6">Get started</a>
+                <a href="#" class="c-btn c-btn--arrow ">Chat with us now</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="o-layout__item u-1/2@tablet text-center md:text-left ">
+            <div class="py-4 callout-boxes__item md:max-w-md flex flex-col justify-between md:pr-6 mx-auto">
+              <div>
+                <h2 class="md:max-w-sm">Need help with your account?</h2>
+                <p>Log in to your platform and speak with our customer success team.</p>
+                <a href="#" class="c-btn c-btn--accent ">Log in</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+
+    <div class="mb-20 md:mb-12 o-wrapper o-wrapper--large">
+      <div class="w100" style="background-color:#DEE4EC; height:1px"></div>
+
+      <div class="o-wrapper text-center">
+        <a href="#" class="c--primary u-h4 font-light mt-8 inline-block link-transition ">
+
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <section class="my-16 md:my-32 md:mb-24 md:mt-16 image-cta relative bg--tertiary o-wrapper">
+      <div class="o-wrapper">
+        <div class="image-cta__wrapper pb-64 pt-16 md:py-20 relative md:text-center">
+          <div class="max-w-1xl mx-auto">
+            <h2 class="fs--42">Interested in writing about Apexxcourier?</h2>
+            <p class="max-w-lg mx-auto"></p>
+            <div class="md:flex max-w-md mx-auto mt-6 items-center">
+              <a href="#"
+                class="c-btn c-btn--accent mb-4 md:mb-0 md:mr-6 w100 justify-center md:w-auto">Email our press team</a>
+              <a href="{% url "getstarted" %}" class="c-btn c-btn--arrow w100 justify-center md:w-auto">Get in
+                touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="my-16 mb-0 md:my-32 md:mb-16 md:mt-16 offices">
+      <div class="o-wrapper">
+
+
+        <div class="md:max-w-xl text-center md:text-left">
+          <h6 class="c--accent">Our offices</h6>
+
+          <h2>Working globally to keep your business moving forward</h2>
+
+
+        </div>
+
+        <div class="o-layout mt-4">
+          <div class="o-layout__item u-1/1 my-12 hidden md:inline-block">
+
+            <div class="o-layout o-layout--stretch">
+              <div class="o-layout__item u-1/2">
+                <div class="flex-auto pointer-events-none">
+                  <div class="h100 o-ratio o-ratio--office">
+                    <div class="o-ratio__content img--cover"><img width="1200" height="800"
+                        src="{% static '/assets/uploads/2020/02/london-1.jpg' %}"
+                        class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                         /></div>
+                  </div>
+                </div>
+              </div>
+              <div class="o-layout__item u-1/2 items-center justify-center">
+                <div class="p-6">
+                  <h2>United States of America</h2>
+                  <p class="fs--18">3530 Co Rd 341, McKinney, TX 75071</p>
+                  <a href="tel:" class="mt-5 c--primary font-bold inline-block link-transition">+1800FastLogistics</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="o-layout__item u-1/2@tablet my-8 md:my-12 md:hidden">
+            <div class="office">
+              <div class="o-ratio o-ratio--office">
+                <div class="o-ratio__content img--cover"><img width="1200" height="800"
+                    src="{% static '/assets/uploads/2020/02/london-1.jpg' %}"
+                    class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                    /></div>
+              </div>
+              <div class="flex justify-between mt-8">
+                <h3 class="font-black c--primary">London</h3>
+                <p class="mr-3">Sweeps Building, 6-7 St Cross Street, EC1N 8UA</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="o-layout__item u-1/2@tablet my-8 md:my-12 ">
+            <div class="office">
+              <div class="o-ratio o-ratio--office">
+                <div class="o-ratio__content img--cover"><img width="1200" height="800"
+                    src="{% static '/assets/uploads/2020/02/geneva-1.jpg' %}"
+                    class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                     /></div>
+              </div>
+              <div class="flex justify-between mt-8">
+                <h3 class="font-black c--primary">Geneva</h3>
+                <p class="mr-3">Rue du Marché, Genève, Switzerland</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="o-layout__item u-1/2@tablet my-8 md:my-12 ">
+            <div class="office">
+              <div class="o-ratio o-ratio--office">
+                <div class="o-ratio__content img--cover"><img width="1600" height="879"
+                    src="{% static '/assets/uploads/2020/02/india-1.jpg' %}"
+                    class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                     /></div>
+              </div>
+              <div class="flex justify-between mt-8">
+                <h3 class="font-black c--primary">Kolkata</h3>
+                <p class="mr-3">Kolkata</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="o-layout__item u-1/2@tablet my-8 md:my-12 ">
+            <div class="office">
+              <div class="o-ratio o-ratio--office">
+                <div class="o-ratio__content img--cover"><img width="1200" height="801"
+                    src="{% static '/assets/uploads/2020/02/valencia.jpg' %}"
+                    class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                     /></div>
+              </div>
+              <div class="flex justify-between mt-8">
+                <h3 class="font-black c--primary">Spain</h3>
+                <p class="mr-3">Valencia, Spain</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="o-layout__item u-1/2@tablet my-8 md:my-12 ">
+            <div class="office">
+              <div class="o-ratio o-ratio--office">
+                <div class="o-ratio__content img--cover"><img width="1400" height="934"
+                    src="{% static '/assets/uploads/2021/01/hong-kong.jpg' %}"
+                    class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                     /></div>
+              </div>
+              <div class="flex justify-between mt-8">
+                <h3 class="font-black c--primary">China</h3>
+                <p class="mr-3">Quarry Bay, Hong Kong<br />
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="o-layout__item u-1/2@tablet my-8 md:my-12 ">
+            <div class="office">
+              <div class="o-ratio o-ratio--office">
+                <div class="o-ratio__content img--cover"><img width="2560" height="1707"
+                    src="{% static '/assets/uploads/2021/12/adrien-olichon-QRtym77B6xk-unsplash-scaled.jpg' %}"
+                    class="attachment-full size-full pointer-events-none" alt="" loading="lazy"
+                     /></div>
+              </div>
+              <div class="flex justify-between mt-8">
+                <h3 class="font-black c--primary">Amsterdam</h3>
+                <!-- <p class="mr-3">(1114 AB), Joop Geesinkweg 901-999, 1-3rd floor</p> -->
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <div class="mb-12 md:mb-24 o-wrapper o-wrapper--large">
+      <div class="w100" style="background-color:#DEE4EC; height:1px"></div>
+    </div>
+
+
+
+    <section class="my-12 md:my-24 links">
+      <div class="o-wrapper">
+        <div class="o-layout -my-8">
+          <div class="o-layout__item u-1/4@tablet u-1/2@bigmobile my-4 my-8">
+            <h4 class="c--primary">Sales</h4>
+            <a href="mailto:sales@Apexxcourier.com" class="c-btn c-btn--arrow mt-2">sales@Apexxcourier.com</a>
+          </div>
+          <div class="o-layout__item u-1/4@tablet u-1/2@bigmobile my-4 my-8">
+            <h4 class="c--primary">Support</h4>
+            <a href="mailto:support@Apexxcourier.com" class="c-btn c-btn--arrow mt-2">support@Apexxcourier.com</a>
+          </div>
+          <div class="o-layout__item u-1/4@tablet u-1/2@bigmobile my-4 my-8">
+            <h4 class="c--primary">Info</h4>
+            <a href="mailto:info@Apexxcourier.com" class="c-btn c-btn--arrow mt-2">info@Apexxcourier.com</a>
+          </div>
+          <div class="o-layout__item u-1/4@tablet u-1/2@bigmobile my-4 my-8">
+            <h4 class="c--primary">General Enquiries</h4>
+            <a href="mailto:hello@Apexxcourier.com" class="c-btn c-btn--arrow mt-2">hello@Apexxcourier.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  {% endblock content %}
+    <!-- FOOTER -->
+    <footer class="footer bg-darkNavy c--white overflow-hidden">
+      <div class="o-wrapper">
+        <div class="o-layout o-layout--stretch items-center">
+          <div class="o-layout__item u-6/16@desktop u-1/2@tablet u-1/1">
+            <div class="md:max-w-24 w100 c--white text-center md:text-left">
+              <div class="mb-6 md:mb-10 flex justify-center md:justify-start">
+                <a href="{% url "homepage" %}" class="w-40 mr-4">
+                  <img class="w-40 h-auto" src="/assets/themes/theme/dist/images/zencargo-logo--white.svg"
+                    alt="Apexxcourier Logo" />
+                </a>
+              </div>
+              <h3 class="u-h2 mx-auto md:ml-0 max-w-sm fs--36">
+                Transform your courier and logistics experience
+              </h3>
+              <p class="fs--19 max-w-xs mx-auto md:ml-0">
+                Track and monitor all your shipment, get them delivered.
+              </p>
+              <div class="buttons mt-6 mb-12 md:mb-0">
+                <div class="o-layout o-layout--stretch o-layout--auto">
+                  <div class="o-layout__item">
+                    <a href="/get-started/index.html" target="" class="c-btn c-btn--mainGreen">Get started</a>
+                  </div>
+                  <div class="o-layout__item" style="padding-left: 16px">
+                    <a href="/tracking/index.html" target="" class="c-btn c-btn--faded">Track Shipment</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="o-layout__item u-10/16@desktop u-1/2@tablet u-1/1 img--contain footer__ship">
+            <img width="1380" height="610" src="/assets/uploads/2020/02/footer-image.png"
+              class="attachment-full size-full pointer-events-none" alt="" loading="lazy" />
+          </div>
+        </div>
+    
+        <main class="footer__main">
+          <nav class="footer__nav--top md:flex items-center md:justify-between">
+            <a href="#">Resources</a>
+            <a href="/about/index.html">About</a>
+            <a href="/careers/index.html">Careers</a>
+    
+            <a href="/contact/index.html">Contact</a>
+          </nav>
+    
+          <div class="footer__hr"></div>
+    
+          <div class="o-layout o-layout--huge o-layout--stretch footer__two-cols">
+            <div class="o-layout__item u-1/2@tablet">
+              <div class="footer__main__left">
+                <div class="footer__hr md:hidden"></div>
+    
+                <h5 class="footer__heading">Latest News</h5>
+                <div class="o-layout o-layout--small">
+                  <div class="o-layout__item u-1/2 mb-2">
+                    <a href="#" class="fs--15 hover:opacity-75 trans leading-snug inline-block c--white">Q3 Product
+                      release
+                      and roadmap</a>
+                  </div>
+                  <div class="o-layout__item u-1/2 mb-2">
+                    <a href="#" class="fs--15 hover:opacity-75 trans leading-snug inline-block c--white">Episode 19: How
+                      can
+                      you be a shipper of choice? A
+                      discussion with Chantal McRoberts</a>
+                  </div>
+                </div>
+    
+                <div id="footer-newsletter-form"></div>
+    
+                <div class="footer-language-switcher flex flex-col bg-transparent mt-10 relative">
+                  <div
+                    class="ls-select ls-active-lang flex flex-row border border-white border-opacity-20 rounded-md py-3 px-4 items-center w-40 cursor-pointer">
+                    <img src="/assets/themes/theme/dist/images/flags/en.png" alt="en" class="ls-flag w-4 mr-3" />
+                    <span class="flex-grow text-sm">English</span>
+                    <div class="ls-chev mt-1" role="button">
+                      <img src="/assets/themes/theme/dist/images/down-chev.svg" alt="" />
+                    </div>
+                  </div>
+    
+                  <div
+                    class="is-open-target absolute bottom-0 left-0 py-3 px-4 bg-darkBlue border border-white border-opacity-20 rounded-md w-40">
+                    <ul>
+                      <li>
+                        <a href="/index-2.html" class="no-underline whitespace-nowrap text-white">
+                          <img src="/assets/themes/theme/dist/images/flags/en.png" alt=""
+                            class="flex-shrink-0 mr-2 inline-block w-4" />
+                          <span class="no-underline text-sm" lang="en">English</span>
+                        </a>
+                      </li>
+    
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="o-layout__item u-1/2@tablet">
+              <div class="footer__main__right md:ml-auto md:mr-0">
+                <h5 class="footer__heading">Solutions</h5>
+                <nav class="col-cnt-2">
+                  <a href="/about/index.html">Why Apexxcourier</a>
+                  <a href="/supply-chain-optimisation/index.html">Supply Chain Optimisation</a>
+                  <a href="/platform/index.html">Platform</a>
+                  <a href="/freight-forwarding/index.html">Freight Forwarding</a>
+                  <a href="/supply-chain-optimisation/grow-revenue/index.html">Grow Revenue</a>
+                  <a href="/supply-chain-optimisation/reduce-freight-costs/index.html">Reduce Freight Costs</a>
+                  <a href="/supply-chain-optimisation/release-working-capital/index.html">Release Working Capital</a>
+                  <a href="#">Sustainable Supply Chain</a>
+                  <a href="#">Supply Chain Agility</a>
+                </nav>
+    
+                <div class="footer__hr footer__hr--to-right"></div>
+    
+                <h5 class="footer__heading">Industries</h5>
+                <nav class="col-cnt-2">
+                  <a href="#">Plastics &#038; Packaging</a>
+                  <a href="#">Fashion, Apparel &#038; Sports</a>
+                  <a href="#">FMCG</a>
+                  <a href="#">Luxury &#038; Beauty</a>
+                  <a href="#">Home &#038; Furnishings</a>
+                  <a href="#">Health &#038; Supplements</a>
+                  <a href="#">Building Materials & Home Improvement</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </main>
+    
+        <div class="footer__hr mb-0 hidden md:block"></div>
+    
+        <div class="footer__bottom md:flex justify-between items-center fs--14 mt-6 md:mt-0 md:mb-0">
+          <div class="md:flex text-center md:text-left">
+            <div class="opacity-75 mb-4 md:mb-0 hidden md:inline-block">
+              &copy; Apexxcourier 2023
+            </div>
+            <div class="md:ml-16">
+              <a href="/terms/index.html" class="c--white opacity-75">Terms & Conditions</a>
+              <a href="/privacy-policy/index.html" class="c--white opacity-75 ml-6">Privacy Policy</a>
+              <a href="/code-of-conduct/index.html" class="c--white opacity-75 ml-6">Code of Conduct</a>
+            </div>
+          </div>
+    
+          <div class="footer__social flex mt-6 md:mt-0 justify-center md:justify-end">
+            <a href="https://www.facebook.com/" class="block" target="_blank">
+              <img src="/assets/themes/theme/dist/images/social/facebook.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/" class="block" target="_blank">
+              <img src="/assets/themes/theme/dist/images/social/twitter.svg" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/company/Apexxcourier/" class="block" target="_blank">
+              <img src="/assets/themes/theme/dist/images/social/linkedin.svg" alt="" />
+            </a>
+          </div>
+          <div class="opacity-75 mt-6 mb-8 md:hidden text-center">
+            &copy; Apexxcourier 2023
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  
+  <script src="/assets/themes/theme/dist/webpack/main9726.js"></script>
+  <script src="http://code.jivosite.com/widget/LmAbrumazi" async></script>
+
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript"
+  src="/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+
+  
+  <script type='text/javascript' id='leadin-script-loader-js-js-extra'>
+    /* <![CDATA[ */
+    var leadin_wordpress = { "userRole": "visitor", "pageType": "page", "leadinPluginVersion": "9.0.35" };
+      /* ]]> */
+  </script>
+  
+  <script type='text/javascript' id='divi-builder-custom-script-js-extra'>
+    /* <![CDATA[ */
+    var et_builder_utils_params = { "condition": { "diviTheme": false, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
+    var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+    var et_pb_custom = { "ajaxurl": "wp-admin\/admin-ajax.php", "images_uri": "assets\/themes\/theme\/images", "builder_images_uri": "assets\/plugins\/divi-builder\/includes\/builder\/images", "et_frontend_nonce": "a1e3de3316", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "582078364e", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "25", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "yes", "is_shortcode_tracking": "", "tinymce_uri": "assets\/plugins\/divi-builder\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": { "context": [".pum-overlay"] } };
+    var et_pb_box_shadow_elements = [];
+      /* ]]> */
+  </script>
+  <script type='text/javascript' src='/assets/plugins/divi-builder/js/scripts.min838c.js'
+    id='divi-builder-custom-script-js'></script>
+  <script type='text/javascript' src='/assets/plugins/divi-builder/core/admin/js/common838c.js'
+    id='et-core-common-js'></script>
+
+
+</body>
+
+
+
+
+<!-- Mirrored from Apexxcourier.com/contact-Apexxcourier/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Feb 2024 15:23:44 GMT -->
+</html>

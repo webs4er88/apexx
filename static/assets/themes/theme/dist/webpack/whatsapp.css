@@ -1,0 +1,208 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap');
+#whatsapp-chat-widget {
+  display: block;
+}
+
+.wa-chat-box-content-send-btn-text {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF !important;
+}
+
+.wa-chat-box-content-send-btn {
+  background-color: #1D1D1B !important;
+  box-shadow: 4px 4px 0px #002fe8;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  overflow: hidden;
+  opacity: 1 !important;
+}
+
+.wa-chat-box-content-chat-welcome {
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.wa-chat-box-brand {
+  width: 52px;
+  height: 52px;
+  border: 1px solid #363636;
+  box-shadow: 0px 2px 240px rgba(0, 0, 0, 0.04);
+  border-radius: 100px;
+  background-color: #002fe8;
+}
+
+.wa-chat-box {
+  background-color: white;
+  z-index: 16000160 !important;
+  margin-bottom: 106px;
+  margin-bottom: 92px;
+  min-width: 320px;
+  position: fixed !important;
+  bottom: 20px !important;
+  right : 20px;
+  border-radius: 32px;
+  border: 2px solid #363636;
+  box-shadow: 4px 6px 0px #002fe8;
+  padding: 32px 32px 16px;
+  min-height: 279px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  pointer-events: none;
+  opacity: 0;
+  scale: 0;
+  transform-origin: right bottom;
+}
+
+.wa-chat-box-visible {
+  pointer-events: auto;
+  opacity: 1;
+  scale: 1;
+}
+
+.wa-chat-box-transition {
+  transition: scale 150ms ease-in, opacity 250ms ease-in;
+}
+
+.wa-widget-send-button {
+  margin: 0 0 20px 0 !important;
+  position: fixed !important;
+  z-index: 16000160 !important;
+  bottom: 0 !important;
+  text-align: center !important;
+  height: 52px;
+  min-width: 52px;
+  border: 0 solid #363636;
+  border-radius: 100px;
+  visibility: visible;
+  transition: none !important;
+  background-color: #002fe8;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
+  right : 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wa-widget-send-button-clicked {
+  border: 1px solid #363636;
+}
+
+.wa-chat-box-poweredby {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999999;
+}
+
+.wa-chat-box-poweredby-link {
+  font-weight: 600;
+  color: #666666 !important;
+  text-decoration: none !important;
+}
+
+.wa-chat-box-poweredby-link::hover {
+  color: #666666 !important;
+  text-decoration: none !important;
+}
+
+.wa-chat-bubble {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 16000160 !important;
+  position: fixed !important;
+  margin-bottom: 63px;
+  bottom: 20px !important;
+  right : 20px;
+}
+
+.wa-chat-bubble-closed {
+  display: none;
+}
+
+.wa-chat-bubble-close-button {
+  height: 20px;
+  min-width: 20px;
+  background: #000000;
+  border-radius: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: 1;
+}
+
+.wa-chat-bubble-text {
+  font-family: 'Outfit', sans-serif !important;
+  background: #FFFFFF;
+  border: 1px solid #363636;
+  box-shadow: 2px 3px 0px #002fe8;
+  border-radius: 24px;
+  padding: 8px 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #202020;
+  cursor: pointer;
+}
+
+.wa-chat-box::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 29px;
+  width: 0;
+  height: 0;
+  border-width: 0 0px 30px 30px;
+  border-color: transparent transparent white transparent;
+  border-style: solid;
+  transform: rotate(270deg);
+  z-index: 1;
+}
+
+.wa-chat-box::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 27px;
+  width: 0;
+  height: 0;
+  border-width: 0px 0px 34px 34px;
+  border-color: transparent transparent black transparent;             /*! border-style: solid; */
+  border-radius: 2px;
+  filter: drop-shadow(-2px 5px 0px #002fe8);
+  transform: rotate(270deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .wa-chat-box              {
+    width: auto;
+    position: fixed !important;
+    right: 20px!important;
+    left: 20px!important;
+  }
+} */

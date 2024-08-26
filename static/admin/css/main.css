@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box !important;
+    font-family: akrobatregular;
+  }
+  html,body{
+      overflow-x: hidden;
+      background-color: #f1eeee;
+  }
+  .side-nav a{
+      font-family: akrobatregular;
+  }
+  nav, .nav-wrapper {
+    height: 130px !important;
+  }
+  nav.shortnav,
+  nav.shortnav .nav-wrapper,
+  nav.shortnav .nav-wrapper i {
+    height: 60px !important;
+    line-height: 60px !important;
+  }
+  .shortnav ul li a {
+    color: #e80f0f !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px;
+  }
+  .shortnav ul {
+    width: auto;
+  }
+  
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
+  ::placeholder {
+    color: rgb(50, 50, 50);
+  }
+  input:disabled {
+    color: black !important;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+  }
+  nav {
+    height: 80px;
+    line-height: 80px;
+  }
+  nav .nav-wrapper i {
+    height: 80px;
+    line-height: 80px;
+  }
+  .logo-dev {
+    display: block;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: calc(50% - 100px);
+    left: -30px;
+    transform: rotate(32deg);
+    z-index: 9999;
+  }
+  .logo-dev img {
+    height: 100px;
+    width: 100px;
+  }
+  .brand-logo {
+    font-family: "akrobatblack";
+    text-overflow: clip;
+  }
+  .brand-logo:hover {
+    color: aliceblue;
+    text-shadow: 1px 1px 1px antiquewhite;
+  }
+  
+  .slider {
+    height: 500px !important;
+  }
+  .slides {
+    height: 500px !important;
+    text-shadow: .5px 2px 4px #2007079a;
+  }
+  .indicators {
+    display: none;
+  }
+  
+  .row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  nav ul li a,
+  .toast {
+    font-size: 18px;
+    font-family: akrobatregular;
+  }
+  nav ul li a i {
+    font-size: 18px !important;
+  }
+  
+  .myrow2 {
+    margin: 0px !important;
+    padding-top: 10px;
+  }
+  
+  .myrow .col-3 {
+    padding: 0px !important;
+  }
+  .huge {
+    font-size: 40px;
+  }
+  
+  .nav-wrapper {
+    margin-bottom: 0px !important;
+  }
+  
+  .slides {
+    font-family: akrobatblack;
+  }
+  .how {
+    font-family: akrobatregular;
+    background-image: url("../images/bg_bottom.jpg");
+  }
+  .howu {
+    font-family: akrobatregular;
+    background-image: url("../images/bg1.jpg");
+    background-size: 100% 100%;
+    background-blend-mode: overlay;
+  }
+  .howb {
+    background-image: url("../images/isobkgdark.jpg");
+  }
+  .how h1,
+  .how h2,
+  .how h2 {
+    margin: 0;
+    padding: 20px;
+  }
+  .step {
+    margin-bottom: 20px;
+    font-family: akrobatblack;
+    overflow: auto;
+  }
+  .step .num {
+    font-size: 30px;
+    padding: 5px;
+    background-color: bisque;
+    border-radius: 10px;
+  }
+  .step .txt {
+    font-size: 23px;
+    padding-left: 10px;
+  }
+  .num p {
+    margin: 0;
+  }
+  
+  .myfooter {
+    font-family: akrobatregular;
+    background-image:  linear-gradient(to bottom, rgb(17, 17, 17), rgb(0, 0, 0));
+  }
+  .myfooter ul li {
+    display: inline-block;
+    height: 25px;
+    padding: 10px;
+    font-size: 17px;
+  }
+  .myfooter ul li a {
+    color: white;
+  }
+  .myfooter ul li a:hover {
+    color: rgba(20, 20, 200, 0.2);
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 1px white;
+  }
+  .myfooter .init {
+    font-size: 20px;
+  }
+  .myfooter .last {
+    color: rgb(75, 220, 193);
+    font-size: 43px;
+    font-family: akrobatblack;
+  }
+  
+  .mynav li {
+    float: none;
+    line-height: 48px;
+  }
+  
+  .mynav li.active {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  span.caret {
+    display: none !important;
+  }
+  
+  .mynav li > a {
+    color: rgba(0, 0, 0, 0.99);
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 32px;
+  }
+  
+  .mynav li > a:hover,
+  .mynav li > a.active {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .mynav li > a > span {
+    font-family: akrobatregular;
+    font-size: 20px;
+  }
+  
+  .mynav li > a > i,
+  .mynav li > a > [class^="mdi-"],
+  .mynav li > a li > a > [class*="mdi-"],
+  .mynav li > a > i.material-icons {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 32px 0 0;
+    width: 24px;
+    color: rgba(0, 0, 0, 0.99);
+    font-size: 18px;
+  }
+  
+  .material-tooltip {
+    font-size: 1.3rem !important;
+    font-family: akrobatregular;
+  }
+  
+  .admin-table td,
+  .admin-table th {
+    font-size: 16px;
+  }
+  
+  /*    My Customixed Containers     */
+  
+  @media (max-width: 600px) {
+    .mycontainer {
+      width: 89%;
+      margin: 0px auto;
+    }
+  }
+  
+  @media (min-width: 730px) {
+    .mycontainer {
+      width: 85%;
+      margin: 0px auto;
+    }
+  }
+  /*  End Of My Customixed Containers     */
+  
+  .ht-section {
+    margin: 30px 0;
+    padding: 20px 50px;
+  }
+  .ht-section h4 {
+    text-align: center;
+    margin: 20px auto;
+    font-family: "akrobatregular";
+  }
+  .ht-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+  }
+  .ht-item {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    background: linear-gradient(to bottom right, #e65a5a, rgb(218, 46, 46));
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "akrobatregular";
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+  }
+  .ht-item:nth-child(1)::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 127, 80, 0.452);
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    z-index: -99;
+  }
+  .ht-item:nth-child(2)::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 20px 10px 40px 30px;
+    background-color: rgba(31, 107, 103, 0.514);
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    z-index: -99;
+  }
+  .ht-item:nth-child(3)::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(106, 107, 122, 0.514);
+    position: absolute;
+    top: -20px;
+    right: 30%;
+    z-index: -99;
+  }
+  .ht-item:nth-child(4)::before {
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 20px 10px 40px 30px;
+    background-color: rgba(31, 107, 103, 0.514);
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: -99;
+  }
+  .ht-item img {
+    width: 90%;
+    height: 70%;
+    margin: 2px auto;
+  }
+  .ht-item p {
+    margin-top: 20px;
+    padding: 0px 10px;
+  }
+  .ht-item p.number {
+    font-size: 130px;
+    text-align: center;
+    text-shadow: 10px 10px 4px rgba(128, 128, 128, 0.534);
+    font-family: "akrobatregular";
+  }
+  .package-section {
+    display: flex;
+    width: 100%;
+    font-family: "akrobatregular";
+    justify-content: space-between;
+  }
+  .ps-text {
+    order: 2;
+    width: 50%;
+  }
+  .ps-img {
+    order: 1;
+    width: 40%;
+  }
+  .ps-text hr {
+    border-bottom: 3px solid seagreen;
+    width: 30%;
+    border-radius: 20px;
+  }
+  .ps-text h4,
+  .ps-text h3,
+  .ps-text hr,
+  .ps-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .ps-text p {
+    font-size: 19px;
+    line-height: 30px;
+    padding: 20px 0;
+    text-align: justify;
+  }
+  .ps-text h3 {
+    font-weight: 600;
+    font-family: angelwar;
+  }
+  
+  .user-feedback {
+    font-family: "akrobatregular";
+    padding: 50px 50px;
+  }
+  .user-feedback h5,
+  .user-feedback h3 {
+    margin: 5px 0px;
+  }
+  .user-feedback h5{
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+  .user-feedback h3 {
+    /* font-weight: 700; */
+    font-family: akrobatblack;
+    font-size: 55px;
+    text-align: center;
+  }
+  .uf-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .uf-item {
+    width: 82%;
+    margin: 20px 0px;
+    padding: 30px;
+    box-shadow: 1px 1px 4px grey;
+    border-radius: 5px;
+  }
+  .uf-item > p {
+    margin-top: 30px;
+    font-size: 17px;
+    text-align: justify;
+  }
+  .uf-item .user  span{
+    font-weight: 600;
+    color: #dd2c00;
+  }
+  
+  .uf-item .user {
+    margin-bottom: 30px;
+  }
+  .partner {
+    display: flex;
+    flex-direction: row;
+  }
+  .partner-item {
+    height: 200px;
+  }
+  .partner-item img {
+    height: 200px;
+  }
+  
+  @media (max-width: 400px) {
+    .ht-content {
+      flex-wrap: wrap;
+    }
+    .ht-item {
+      width: 100%;
+      margin-bottom: 45px;
+    }
+    .uf-item {
+      width: 95%;
+      margin-right: 0px;
+    }
+    .user-feedback {
+      padding-left: 15px;
+      padding-right: 5px;
+    }
+  
+    .package-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .ps-text {
+      width: 100%;
+    }
+    .ps-img {
+      width: 100%;
+    }
+  }
+  
+  @font-face {
+    font-family: "akrobatblack";
+    src:
+      url("../fonts/akrobat-black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "akrobatextralight";
+    src:
+      url("../fonts/akrobat-extralight-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "akrobatregular";
+    src:
+      url("../fonts/akrobat-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "alegreya";
+    src: url("../fonts/alegreyaSC-blackItalic.otf");
+  }
+  
+  @font-face {
+    font-family: "umbrage";
+    src: url("../fonts/umbrage2.ttf");
+  }
+  
